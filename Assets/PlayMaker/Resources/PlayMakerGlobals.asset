@@ -1,0 +1,403 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 42938266, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: PlayMakerGlobals
+  m_EditorClassIdentifier: 
+  variables:
+    floatVariables:
+    - useVariable: 1
+      name: Time SCALE
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 1
+    - useVariable: 1
+      name: Torque
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: Y
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 1000
+    - useVariable: 1
+      name: R
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: G
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: Y- tra
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: Z - tra
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 5.5
+    - useVariable: 1
+      name: Track Z
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: Layer Weight
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0.5
+    - useVariable: 1
+      name: DSTo
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: layerr
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: camera up
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 7.5
+    - useVariable: 1
+      name: WAITING T
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: Slider Fill
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: HEIGHT
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 4.32
+    - useVariable: 1
+      name: HEAD Z
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: HHHZZZ
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: 00222
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: 00111
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: RED Bullet MIN
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0.22
+    - useVariable: 1
+      name: d001
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 10
+    - useVariable: 1
+      name: h001
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 15
+    - useVariable: 1
+      name: waiting time
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: wt/5
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: wt5
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: Distance
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 10
+    - useVariable: 1
+      name: Height
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 5
+    - useVariable: 1
+      name: ROATT
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 30
+    - useVariable: 1
+      name: RED B MAX
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: Waiting time
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0.2
+    intVariables:
+    - useVariable: 1
+      name: keylevel
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: PRC
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: GOLD
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: KILLS
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: SCORE11
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: KILL COUNT
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: INDEX
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: KILLERS
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    boolVariables:
+    - useVariable: 1
+      name: anim bool
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: ROUND BOOL
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    stringVariables:
+    - useVariable: 1
+      name: The Message
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 
+    - useVariable: 1
+      name: STR TEST
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 
+    - useVariable: 1
+      name: ROUND ORDER
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: ROUND 1
+    vector2Variables: []
+    vector3Variables:
+    - useVariable: 1
+      name: RF Scale
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {x: 0, y: 0, z: 0}
+    colorVariables: []
+    rectVariables: []
+    quaternionVariables: []
+    gameObjectVariables:
+    - useVariable: 1
+      name: 43ER
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: 43ER2
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: NUMBER 1
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: NUMBER 4
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: NUMBER 2
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: NUMBER 3
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: RightHand
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: owner
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    objectVariables: []
+    materialVariables: []
+    textureVariables: []
+    arrayVariables:
+    - useVariable: 1
+      name: Middle
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      type: 3
+      objectTypeName: UnityEngine.Object
+      floatValues: []
+      intValues: 
+      boolValues: 
+      stringValues: []
+      vector4Values: []
+      objectReferences: []
+    enumVariables: []
+    categories:
+    - 
+    variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  events:
+  - Self Destroy
+  - Use Gravity
+  - DEVIL
+  - ANGEL
+  - New Message
+  - NORMAL
+  - Tween
+  - Tween back
+  - Self destroy
+  - DOOM left
+  - DOOM right
+  - FREEZE ALL
+  - RSTrt this fsm
+  - LEAN LEFT
+  - LEAN RIGHT
+  - R
+  - RB
+  - TWEENE
+  - RSTRT
+  - HAS FLAG
+  - HOME FLAG
+  - Follow the leader
+  - RED FLAG TAKEN
+  - follow red leader
+  - Follow red leader
+  - FOLLOW BLUE LEADER
+  - FOLLOW RED LEADER
+  - FLAG TAKEN
+  - PLY DEAD
+  - BASE
+  - Fail
+  - Grenade
+  - REPA
+  - FLAG RESTORED
+  - 00rst
+  - another rond
+  - Camera Fade In
+  - ANOTHER ROUND
+  - self dsrt
+  - AGAIN
+  - Reload save
+  - KNIFE
+  - BFT
+  - jh

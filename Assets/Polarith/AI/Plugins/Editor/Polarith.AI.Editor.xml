@@ -1,0 +1,376 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Polarith.AI.Editor</name>
+    </assembly>
+    <members>
+        <member name="T:Polarith.AI.MoveEditor.AIMBehaviourEditor">
+            <summary>
+            Custom editor for each derived <see cref="T:Polarith.AI.Move.AIMBehaviour"/>. When inheriting from this class, the three
+            methods <see cref="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.DrawBehaviourInspector"/>, <see cref="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.DrawEnvironmentInspector"/> and <see
+            cref="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.DrawGizmoInspector"/> needs to be implemented. These methods define what is shown in the three
+            corresponding inspector tabs.
+            <para/>
+            Note that <see cref="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.Awake"/>, <see cref="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.OnEnable"/> and <see cref="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.OnInspectorGUI"/> are already implemented
+            for this level of inheritance, so the base versions of these methods should be called for each overridden
+            version of these methods.
+            </summary>
+        </member>
+        <member name="P:Polarith.AI.MoveEditor.AIMBehaviourEditor.BehaviourProperty">
+            <summary>
+            Needs to be implemented for ensuring that every behaviour editor has access to serialized properties. Can be
+            trivially implemented by calling <see cref="M:UnityEditor.SerializedObject.FindProperty(System.String)"/> with the name of the
+            back-end behaviour, e.g., <c>return serializedObject.FindProperty("Adjust");</c> for the AIMAdjust
+            behaviour.
+            </summary>
+        </member>
+        <member name="P:Polarith.AI.MoveEditor.AIMBehaviourEditor.AdvancedInspector">
+            <summary>
+            If <c>true</c>, the advanced inspector option is used. Thus, the advanced inspector should be displayed and
+            vice versa.
+            </summary>
+        </member>
+        <member name="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.DrawBehaviourInspector">
+            <summary>
+            Defines elements to be displayed at the 'Behaviour' inspector tab. Here, all properties associated with the
+            back-end behaviour should be displayed.
+            </summary>
+        </member>
+        <member name="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.DrawEnvironmentInspector">
+            <summary>
+            Defines elements to be displayed at the 'Environment' inspector tab. Here, all properties associated with
+            the behaviours perception should be displayed.
+            </summary>
+        </member>
+        <member name="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.DrawGizmoInspector">
+            <summary>
+            Defines elements to be displayed at the 'Gizmo' inspector tab. Here, all properties associated with the
+            behaviour's gizmos should be displayed.
+            </summary>
+        </member>
+        <member name="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.DrawHeaderBegin">
+            <summary>
+            Optional, defines elements to be displayed at the top of the inspector. For example, we use this method to
+            display our Polarith logo.
+            </summary>
+        </member>
+        <member name="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.DrawHeaderEnd">
+            <summary>
+            Optional, defines elements to be displayed between <see cref="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.DrawHeaderBegin"/> and the first property.
+            </summary>
+        </member>
+        <member name="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.OnInspectorGUI">
+            <summary>
+            The base implementation of the Polarith AIM behaviour inspector layout. It ensures that the necessary <see
+            cref="T:UnityEditor.SerializedObject"/> calls are done correctly. The pipeline is as follows:
+            <list type="number">
+            <item>Call to <see cref="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.DrawHeaderBegin"/>,</item>
+            <item>
+            Display the inspector tab <see cref="M:UnityEngine.GUILayout.Toolbar(System.Int32,UnityEngine.GUIContent[],UnityEngine.GUILayoutOption[])"/>,
+            </item>
+            <item>
+            Display the property fields for <see cref="F:Polarith.AI.Move.AIMBehaviour.Order"/> and <see
+            cref="F:Polarith.AI.Move.AIMBehaviour.Label"/>,
+            </item>
+            <item>
+            According to the inspector tab, call either <see cref="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.DrawBehaviourInspector"/>, <see
+            cref="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.DrawEnvironmentInspector"/> or <see cref="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.DrawGizmoInspector"/>.
+            </item>
+            </list>
+            </summary>
+        </member>
+        <member name="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.Awake">
+            <summary>
+            Called at inspector initialization.
+            </summary>
+        </member>
+        <member name="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.OnEnable">
+            <summary>
+            Called when the inspector is shown.
+            </summary>
+        </member>
+        <member name="T:Polarith.AI.MoveEditor.AIMPerceptBehaviourEditor`1">
+            <summary>
+            Custom editor for each derived <see cref="T:Polarith.AI.Move.AIMPerceptBehaviour`1"/>. When inheriting from this class, the three
+            methods <see cref="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.DrawBehaviourInspector"/>, <see cref="M:Polarith.AI.MoveEditor.AIMPerceptBehaviourEditor`1.DrawEnvironmentInspector"/> and <see
+            cref="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.DrawGizmoInspector"/> needs to be implemented. These methods define what is shown in
+            the three corresponding inspector tabs.
+            <para/>
+            Note that <see cref="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.Awake"/>, <see cref="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.OnEnable"/>, <see
+            cref="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.OnInspectorGUI"/> and <see cref="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.DrawEnvironmentInspector"/> are
+            already implemented for this level of inheritance, so the base versions of these methods should be called for
+            each overridden version of these methods.
+            </summary>
+        </member>
+        <member name="M:Polarith.AI.MoveEditor.AIMPerceptBehaviourEditor`1.DrawHeaderEnd">
+            <summary>
+            Optional, defines elements to be displayed between <see cref="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.DrawHeaderBegin"/> and the
+            first property.
+            </summary>
+        </member>
+        <member name="M:Polarith.AI.MoveEditor.AIMPerceptBehaviourEditor`1.DrawEnvironmentInspector">
+            <summary>
+            Displays both the <see cref="F:Polarith.AI.Move.AIMPerceptBehaviour`1.FilteredEnvironments"/> list and the <see
+            cref="F:Polarith.AI.Move.AIMPerceptBehaviour`1.GameObjects"/> list. If an <see cref="T:Polarith.AI.Move.AIMSteeringPerceiver"/> is attached to
+            the game object, the <see cref="F:Polarith.AI.Move.AIMPerceptBehaviour`1.FilteredEnvironments"/> list uses popup fields for
+            assigning the environment labels. As against the labels can be set directly via textual input if no
+            perceiver is present.
+            </summary>
+        </member>
+        <member name="M:Polarith.AI.MoveEditor.AIMPerceptBehaviourEditor`1.OnEnable">
+            <summary>
+            Called when the inspector is shown.
+            </summary>
+        </member>
+        <member name="T:Polarith.AI.MoveEditor.AIMRadiusSteeringBehaviourEditor">
+            <summary>
+            Custom editor for each derived <see cref="T:Polarith.AI.Move.AIMRadiusSteeringBehaviour"/>. When inheriting from this class, the three
+            methods <see cref="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.DrawBehaviourInspector"/>, <see
+            cref="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.DrawEnvironmentInspector"/> and <see cref="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.DrawGizmoInspector"/>
+            needs to be implemented. These methods define what is shown in the three corresponding inspector tabs.
+            <para/>
+            Note that <see cref="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.Awake"/>, <see cref="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.OnEnable"/>, <see
+            cref="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.OnInspectorGUI"/>, <see cref="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.DrawEnvironmentInspector"/>, <see
+            cref="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.DrawBehaviourInspector"/> and <see cref="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.DrawGizmoInspector"/> are
+            already implemented for this level of inheritance, so the base versions of these methods should be called for
+            each overridden version of these methods.
+            </summary>
+        </member>
+        <member name="M:Polarith.AI.MoveEditor.AIMRadiusSteeringBehaviourEditor.DrawBehaviourInspector">
+            <summary>
+            Displays the properties of the corresponding <see cref="T:Polarith.AI.Move.RadiusSteeringBehaviour"/> inside a foldout.
+            </summary>
+        </member>
+        <member name="M:Polarith.AI.MoveEditor.AIMRadiusSteeringBehaviourEditor.DrawGizmoInspector">
+            <summary>
+            Displays the circle gizmo settings for the <see cref="F:Polarith.AI.Move.RadiusSteeringBehaviour.InnerRadius"/> and <see
+            cref="F:Polarith.AI.Move.RadiusSteeringBehaviour.OuterRadius"/>.
+            </summary>
+        </member>
+        <member name="T:Polarith.AI.MoveEditor.AIMSteeringBehaviourEditor">
+            <summary>
+            Custom editor for each derived <see cref="T:Polarith.AI.Move.AIMSteeringBehaviour"/>. When inheriting from this class, the three
+            methods <see cref="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.DrawBehaviourInspector"/>, <see
+            cref="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.DrawEnvironmentInspector"/> and <see cref="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.DrawGizmoInspector"/>
+            needs to be implemented. These methods define what is shown in the three corresponding inspector tabs.
+            <para/>
+            Note that <see cref="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.Awake"/>, <see cref="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.OnEnable"/>, <see
+            cref="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.OnInspectorGUI"/>, <see cref="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.DrawEnvironmentInspector"/> and <see
+            cref="M:Polarith.AI.MoveEditor.AIMBehaviourEditor.DrawBehaviourInspector"/> are already implemented for this level of inheritance, so the
+            base versions of these methods should be called for each overridden version of these methods.
+            </summary>
+        </member>
+        <member name="M:Polarith.AI.MoveEditor.AIMSteeringBehaviourEditor.DrawBehaviourInspector">
+            <summary>
+            Displays the properties of the corresponding <see cref="T:Polarith.AI.Move.SteeringBehaviour"/> inside a foldout.
+            </summary>
+        </member>
+        <member name="M:Polarith.AI.MoveEditor.AIMSteeringBehaviourEditor.DrawGizmoInspector">
+            <summary>
+            Displays the gizmo settings.
+            </summary>
+        </member>
+        <member name="T:Polarith.AI.MoveEditor.AIMLinearPathEditor">
+            <summary>
+            Implements some functionalities for editing and modifying a path interactively in the scene.
+            </summary>
+        </member>
+        <member name="F:Polarith.AI.MoveEditor.AIMLinearPathEditor.selectedPoints">
+            <summary>
+            List of selected points.
+            </summary>
+        </member>
+        <member name="M:Polarith.AI.MoveEditor.AIMLinearPathEditor.ShowPointInspector">
+            <summary>
+            Shows basic information about the path. In addition to its base method <see
+            cref="M:Polarith.AI.MoveEditor.AIMPathConnectorEditor.ShowPointInspector"/> it the path points can be modified.
+            </summary>
+        </member>
+        <member name="M:Polarith.AI.MoveEditor.AIMLinearPathEditor.ShowVisualizationInspector">
+            <summary>
+            Provides basic serialized property for modifying the visualization of the path.
+            </summary>
+        </member>
+        <member name="M:Polarith.AI.MoveEditor.AIMLinearPathEditor.Raycast.CastWorldRay(UnityEngine.Vector3)">
+            <summary>
+            This method is used in combination with <see cref="M:Polarith.AI.MoveEditor.AIMLinearPathEditor.Raycast.CastScreenRay(UnityEngine.Vector2)"/>. First, the given world
+            point is transformed to its corresponding screen point. Afterwards, <see cref="M:Polarith.AI.MoveEditor.AIMLinearPathEditor.Raycast.CastScreenRay(UnityEngine.Vector2)"/>
+            is called.
+            </summary>
+            <param name="worldPosition">The world point where the ray where the ray is going through.</param>
+            <returns>The <see cref="T:UnityEngine.RaycastHit"/> of the created ray.</returns>
+        </member>
+        <member name="M:Polarith.AI.MoveEditor.AIMLinearPathEditor.Raycast.CastScreenRay(UnityEngine.Vector2)">
+            <summary>
+            This method detects any collision between a <see cref="T:UnityEngine.Ray"/> and the game objects within
+            the scene. This might be helpful for a simple interaction with the scene, for example for creating a
+            path or a racetrack. The collision information is returned via a <see cref="T:UnityEngine.RaycastHit"/>. The ray
+            starts by the current camera position and is going through the given screen point. Hence, the methods
+            <see cref="M:UnityEngine.Camera.ScreenPointToRay(UnityEngine.Vector3)"/> and <see cref="M:UnityEngine.Physics.Raycast(UnityEngine.Ray)"/> are
+            called in combination. If no detection is recognized, then the method returns the intersection with
+            either the x-y plane (2D Mode) or the y-z plane (3D Mode).
+            <para/>
+            Note, some kind of <see cref="T:UnityEngine.Collider"/> has to be attached to the game objects.
+            </summary>
+            <param name="screenPosition">Determines the point on the screen where the ray is going through.</param>
+            <returns>The <see cref="T:UnityEngine.RaycastHit"/> of the created ray.</returns>
+        </member>
+        <member name="T:Polarith.AI.MoveEditor.AIMPathConnectorEditor">
+            <summary>
+            Basic editor in order to share essential information about the path and to provide a simple path visualization
+            system.
+            <para/>
+            Usage: Inherit from this class and override <see cref="M:Polarith.AI.MoveEditor.AIMPathConnectorEditor.ShowPointInspector"/> and <see
+                   cref="M:Polarith.AI.MoveEditor.AIMPathConnectorEditor.ShowVisualizationInspector"/> in order to extend the basic editor with more specific properties.
+            </summary>
+        </member>
+        <member name="M:Polarith.AI.MoveEditor.AIMPathConnectorEditor.OnInspectorGUI">
+            <summary>
+            Used in order to build the custom inspector with the serialized properties of its target class. The custom
+            inspectors has two tabs. One for showing and modifying the path points, <see cref="M:Polarith.AI.MoveEditor.AIMPathConnectorEditor.ShowPointInspector"/> and
+            ons for editing the visualization <see cref="M:Polarith.AI.MoveEditor.AIMPathConnectorEditor.ShowVisualizationInspector"/>.
+            </summary>
+        </member>
+        <member name="M:Polarith.AI.MoveEditor.AIMPathConnectorEditor.ShowPointInspector">
+            <summary>
+            Shows basic information about the path.
+            </summary>
+        </member>
+        <member name="M:Polarith.AI.MoveEditor.AIMPathConnectorEditor.ShowVisualizationInspector">
+            <summary>
+            Provides basic serialized property for modifying the visualization of the path.
+            </summary>
+        </member>
+        <member name="M:Polarith.AI.MoveEditor.AIMPathConnectorEditor.Awake">
+            <summary>
+            Called at inspector initialization.
+            </summary>
+        </member>
+        <member name="T:Polarith.AI.MoveEditor.AIMPathfindingEditor">
+            <summary>
+            A basic editor for pathfinding components. It extends the basic <see cref="T:Polarith.AI.MoveEditor.AIMPathConnectorEditor"/> with <see
+            cref="T:Polarith.AI.Move.Validator"/> in order to control when the path has to be recalculated.
+            </summary>
+        </member>
+        <member name="M:Polarith.AI.MoveEditor.AIMPathfindingEditor.ShowPointInspector">
+            <summary>
+            Shows basic information about the path and its validators.
+            </summary>
+        </member>
+        <member name="M:Polarith.AI.MoveEditor.AIMPathfindingEditor.AddCustomValidatorData">
+            <summary>
+            Inject custom serialized properties of your own custom validator.
+            </summary>
+        </member>
+        <member name="T:Polarith.AI.MoveEditor.AIMUnityPathfindingEditor">
+            <summary>
+            Customized pathfinding editor using <see cref="T:UnityEngine.AI.NavMeshAgent"/>.
+            </summary>
+        </member>
+        <member name="M:Polarith.AI.MoveEditor.AIMUnityPathfindingEditor.ShowPointInspector">
+            <summary>
+            Shows basic information about the path and its validators.
+            </summary>
+        </member>
+        <member name="M:Polarith.AI.MoveEditor.AIMUnityPathfindingEditor.AddCustomValidatorData">
+            <summary>
+            Inject custom serialized properties of the <see cref="T:Polarith.AI.Move.NavMeshAgentValidator"/>.
+            </summary>
+        </member>
+        <member name="T:Polarith.AI.MoveEditor.AIMPlanarSensorEditor">
+            <summary>
+            Handles the proper building and updating of <see cref="T:Polarith.AI.Move.AIMPlanarSensor"/> instances.
+            </summary>
+        </member>
+        <member name="P:Polarith.AI.MoveEditor.AIMSensorEditor.SensorName">
+            <summary>
+            The name of the sensor property. Is used to call serializedObject.FindProperty(SensorName).
+            </summary>
+        </member>
+        <member name="T:Polarith.AI.MoveEditor.AIMPlanarShaperEditor.BaseSensors">
+            <summary>
+            This enum is used to check which base sensor is selected in the <see cref="T:Polarith.AI.Move.PlanarSensor"/> inspector.
+            </summary>
+        </member>
+        <member name="F:Polarith.AI.MoveEditor.AIMPlanarShaperEditor.BaseSensors.Circle">
+            <summary>
+            A circle sensor.
+            </summary>
+        </member>
+        <member name="F:Polarith.AI.MoveEditor.AIMPlanarShaperEditor.BaseSensors.Line">
+            <summary>
+            A line sensor.
+            </summary>
+        </member>
+        <member name="T:Polarith.AI.MoveEditor.AIMPlanarShaperEditor.InteractionState">
+            <summary>
+            This enum is used to check the status of the receptor manipulator tool.
+            </summary>
+        </member>
+        <member name="F:Polarith.AI.MoveEditor.AIMPlanarShaperEditor.InteractionState.MoveFree">
+            <summary>
+            The manipulator tool to move free, directional and orthogonal to the direction.
+            </summary>
+        </member>
+        <member name="F:Polarith.AI.MoveEditor.AIMPlanarShaperEditor.InteractionState.MoveAxis">
+            <summary>
+            The manipulator tool to move along the x and y axis.
+            </summary>
+        </member>
+        <member name="F:Polarith.AI.MoveEditor.AIMPlanarShaperEditor.InteractionState.Rotate">
+            <summary>
+            The manipulator tool to rotate the direction.
+            </summary>
+        </member>
+        <member name="F:Polarith.AI.MoveEditor.AIMPlanarShaperEditor.InteractionState.ScaleMagnitude">
+            <summary>
+            The manipulator tool to scale the magnitude.
+            </summary>
+        </member>
+        <member name="F:Polarith.AI.MoveEditor.AIMPlanarShaperEditor.InteractionState.ScaleThreshold">
+            <summary>
+            The manipulator tool to scale the sensitivity.
+            </summary>
+        </member>
+        <member name="F:Polarith.AI.MoveEditor.AIMPlanarShaperEditor.InteractionState.Last">
+            <summary>
+            The last entry.
+            </summary>
+        </member>
+        <member name="M:Polarith.AI.MoveEditor.AIMPlanarShaperEditor.OnInspectorGUI">
+            <summary>
+            The overridden inspector GUI method, defining the unique editor inspector.
+            </summary>
+        </member>
+        <member name="T:Polarith.AI.MoveEditor.AIMPlanarShaperEditor.FloatIntTupel">
+            <summary>
+            A handy struct to create lists containing (float, int) tuples which can be sorted by the float values.
+            </summary>
+        </member>
+        <member name="F:Polarith.AI.MoveEditor.AIMPlanarShaperEditor.FloatIntTupel.f">
+            <summary>
+            The float value of the pair.
+            </summary>
+        </member>
+        <member name="F:Polarith.AI.MoveEditor.AIMPlanarShaperEditor.FloatIntTupel.i">
+            <summary>
+            The int value of the pair.
+            </summary>
+        </member>
+        <member name="M:Polarith.AI.MoveEditor.AIMPlanarShaperEditor.FloatIntTupel.#ctor(System.Single,System.Int32)">
+            <summary>
+            Creates a pair of float and an int value.
+            </summary>
+            <param name="floatValue">The float value of the pair.</param>
+            <param name="intValue">The int value of the pair.</param>
+        </member>
+        <member name="M:Polarith.AI.MoveEditor.AIMPlanarShaperEditor.FloatIntTupel.Compare(System.Single,System.Single)">
+            <summary>
+            The overridden compare method, which ignores the int value of the pair.
+            </summary>
+            <param name="x">The first value.</param>
+            <param name="y">The second value.</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

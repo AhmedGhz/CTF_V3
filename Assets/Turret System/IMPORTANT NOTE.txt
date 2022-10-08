@@ -1,0 +1,3 @@
+- Before anything can work, you MUST create a "RangeCollider" layer, apply it ONLY to the TargetSensor child of each turret prefab, and uncheck it in "Obstacle Layer Mask" of all turret prefabs, and projectile prefabs. And also create "Enemy" and "AirEnemy" tags and assign it to the enemy cubes in demo scenes.
+
+- As far as I know there is no way to include tags and layers with an asset, unless it's labeled as a "Complete Project", which will overwrite tags and layers in your project, if they're under the same index. 

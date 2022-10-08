@@ -1,0 +1,910 @@
+
+header:None { 0    
+    header:"Generator":"OpenSceneGraph3.5.6","Version":9,"osg.Node": { 58        
+        header:"Children": [ 70            
+            header:None { 71                
+                header:"osg.MatrixTransform": { 94                    
+                    header:"UniqueID":0,"Name":"5519d915c64b496c97b0baff1d864a5d.fbx","Children": [ 165                        
+                        header:None { 166                            
+                            header:"osg.MatrixTransform": { 189                                
+                                header:"UniqueID":2,"Name":"RootNode","Children": [ 232                                    
+                                    header:None { 233                                        
+                                        header:"osg.MatrixTransform": { 256                                            
+                                            header:"UniqueID":3,"Name":"gun_01","Children": [ 297                                                
+                                                header:None { 298                                                    
+                                                    header:"osg.MatrixTransform": { 321                                                        
+                                                        header:"UniqueID":4,"Children": [ 346                                                            
+                                                            header:None { 347                                                                
+                                                                header:"osg.Node": { 359                                                                    
+                                                                    header:"UniqueID":5,"Name":"gun_01","Children": [ 400                                                                        
+                                                                        header:None { 401                                                                            
+                                                                            header:"osg.Geometry": { 417                                                                                
+                                                                                header:"UniqueID":6,"Name":"gun_01_1_0","PrimitiveSetList": [ 470                                                                                    
+                                                                                    header:None { 471                                                                                        
+                                                                                        header:"DrawElementsUInt": { 491                                                                                            
+                                                                                            header:"UniqueID":15,"Indices": { 516                                                                                                
+                                                                                                header:"UniqueID":16,"Array": { 539                                                                                                    
+                                                                                                    header:"Uint32Array": { 554                                                                                                        
+                                                                                                        data:"File":"model_file.bin.gz","Size":2583,"Offset":0,"Encoding":"varint"
+                                                                                                         } 624                                                                                                    
+                                                                                                    data:None
+                                                                                                     } 625                                                                                                
+                                                                                                data:,"ItemSize":1,"Type":"ELEMENT_ARRAY_BUFFER"
+                                                                                                 } 669                                                                                            
+                                                                                            data:,"Mode":"TRIANGLE_STRIP"
+                                                                                             } 694                                                                                        
+                                                                                        data:None
+                                                                                         } 695                                                                                    
+                                                                                    header:, { 697                                                                                        
+                                                                                        header:"DrawElementsUShort": { 719                                                                                            
+                                                                                            header:"UniqueID":17,"Indices": { 744                                                                                                
+                                                                                                header:"UniqueID":18,"Array": { 767                                                                                                    
+                                                                                                    header:"Uint16Array": { 782                                                                                                        
+                                                                                                        data:"File":"model_file.bin.gz","Size":189,"Offset":3284,"Encoding":"varint"
+                                                                                                         } 854                                                                                                    
+                                                                                                    data:None
+                                                                                                     } 855                                                                                                
+                                                                                                data:,"ItemSize":1,"Type":"ELEMENT_ARRAY_BUFFER"
+                                                                                                 } 899                                                                                            
+                                                                                            data:,"Mode":"TRIANGLES"
+                                                                                             } 919                                                                                        
+                                                                                        data:None
+                                                                                         } 920                                                                                    
+                                                                                    data:None                                                                                     ] 921                                                                                
+                                                                                header:,"StateSet": { 934                                                                                    
+                                                                                    header:"osg.StateSet": { 950                                                                                        
+                                                                                        header:"UniqueID":7,"AttributeList": [ 980                                                                                            
+                                                                                            header:None { 981                                                                                                
+                                                                                                header:"osg.Material": { 997                                                                                                    
+                                                                                                    header:"UniqueID":9,"Name":"1","Ambient": [ 1032                                                                                                        
+                                                                                                        data:0.588235,0.588235,0.588235,1
+                                                                                                         ] 1061                                                                                                    
+                                                                                                    header:,"Diffuse": [ 1073                                                                                                        
+                                                                                                        data:0.588235,0.588235,0.588235,1
+                                                                                                         ] 1102                                                                                                    
+                                                                                                    header:,"Emission": [ 1115                                                                                                        
+                                                                                                        data:0,0,0,1
+                                                                                                         ] 1123                                                                                                    
+                                                                                                    header:,"Shininess":2,"Specular": [ 1150                                                                                                        
+                                                                                                        data:0,0,0,1
+                                                                                                         ] 1158                                                                                                    
+                                                                                                    data:None
+                                                                                                     } 1159                                                                                                
+                                                                                                data:None
+                                                                                                 } 1160                                                                                            
+                                                                                            data:None                                                                                             ] 1161                                                                                        
+                                                                                        header:,"UserDataContainer": { 1183                                                                                            
+                                                                                            header:"UniqueID":8,"Values": [ 1206                                                                                                
+                                                                                                header:None { 1207                                                                                                    
+                                                                                                    header:"Name":"LambertAmbientColor","Value":" [ 1246                                                                                                        
+                                                                                                        data:0.588235,0.588235,0.588235
+                                                                                                         ] 1273                                                                                                    
+                                                                                                    data:"
+                                                                                                     } 1275                                                                                                
+                                                                                                header:, { 1277                                                                                                    
+                                                                                                    data:"Name":"LambertAmbientFactor","Value":"1"
+                                                                                                     } 1319                                                                                                
+                                                                                                header:, { 1321                                                                                                    
+                                                                                                    data:"Name":"LambertBumpFactor","Value":"1"
+                                                                                                     } 1360                                                                                                
+                                                                                                header:, { 1362                                                                                                    
+                                                                                                    header:"Name":"LambertDiffuseColor","Value":" [ 1401                                                                                                        
+                                                                                                        data:0.588235,0.588235,0.588235
+                                                                                                         ] 1428                                                                                                    
+                                                                                                    data:"
+                                                                                                     } 1430                                                                                                
+                                                                                                header:, { 1432                                                                                                    
+                                                                                                    data:"Name":"LambertDiffuseFactor","Value":"1"
+                                                                                                     } 1474                                                                                                
+                                                                                                header:, { 1476                                                                                                    
+                                                                                                    header:"Name":"LambertEmissiveColor","Value":" [ 1516                                                                                                        
+                                                                                                        data:0,0,0
+                                                                                                         ] 1522                                                                                                    
+                                                                                                    data:"
+                                                                                                     } 1524                                                                                                
+                                                                                                header:, { 1526                                                                                                    
+                                                                                                    data:"Name":"LambertEmissiveFactor","Value":"0"
+                                                                                                     } 1569                                                                                                
+                                                                                                header:, { 1571                                                                                                    
+                                                                                                    data:"Name":"LambertTransparencyFactor","Value":"0"
+                                                                                                     } 1618                                                                                                
+                                                                                                header:, { 1620                                                                                                    
+                                                                                                    data:"Name":"PhongReflectionFactor","Value":"1"
+                                                                                                     } 1663                                                                                                
+                                                                                                header:, { 1665                                                                                                    
+                                                                                                    data:"Name":"PhongShininess","Value":"2"
+                                                                                                     } 1701                                                                                                
+                                                                                                header:, { 1703                                                                                                    
+                                                                                                    header:"Name":"PhongSpecularColor","Value":" [ 1741                                                                                                        
+                                                                                                        data:0.9,0.9,0.9
+                                                                                                         ] 1753                                                                                                    
+                                                                                                    data:"
+                                                                                                     } 1755                                                                                                
+                                                                                                header:, { 1757                                                                                                    
+                                                                                                    data:"Name":"PhongSpecularFactor","Value":"0"
+                                                                                                     } 1798                                                                                                
+                                                                                                header:, { 1800                                                                                                    
+                                                                                                    data:"Name":"source","Value":"fbx"
+                                                                                                     } 1830                                                                                                
+                                                                                                header:, { 1832                                                                                                    
+                                                                                                    data:"Name":"UniqueID","Value":"1"
+                                                                                                     } 1862                                                                                                
+                                                                                                data:None                                                                                                 ] 1863                                                                                            
+                                                                                            data:None
+                                                                                             } 1864                                                                                        
+                                                                                        data:None
+                                                                                         } 1865                                                                                    
+                                                                                    data:None
+                                                                                     } 1866                                                                                
+                                                                                header:,"UserDataContainer": { 1888                                                                                    
+                                                                                    header:"UniqueID":10,"Values": [ 1912                                                                                        
+                                                                                        header:None { 1913                                                                                            
+                                                                                            data:"Name":"attributes","Value":"55"
+                                                                                             } 1946                                                                                        
+                                                                                        header:, { 1948                                                                                            
+                                                                                            data:"Name":"vertex_bits","Value":"12"
+                                                                                             } 1982                                                                                        
+                                                                                        header:, { 1984                                                                                            
+                                                                                            data:"Name":"vertex_mode","Value":"3"
+                                                                                             } 2017                                                                                        
+                                                                                        header:, { 2019                                                                                            
+                                                                                            data:"Name":"uv_0_bits","Value":"16"
+                                                                                             } 2051                                                                                        
+                                                                                        header:, { 2053                                                                                            
+                                                                                            data:"Name":"uv_0_mode","Value":"3"
+                                                                                             } 2084                                                                                        
+                                                                                        header:, { 2086                                                                                            
+                                                                                            data:"Name":"epsilon","Value":"0.25"
+                                                                                             } 2118                                                                                        
+                                                                                        header:, { 2120                                                                                            
+                                                                                            data:"Name":"nphi","Value":"720"
+                                                                                             } 2148                                                                                        
+                                                                                        header:, { 2150                                                                                            
+                                                                                            data:"Name":"triangle_mode","Value":"7"
+                                                                                             } 2185                                                                                        
+                                                                                        header:, { 2187                                                                                            
+                                                                                            data:"Name":"vertex_obits","Value":"12"
+                                                                                             } 2222                                                                                        
+                                                                                        header:, { 2224                                                                                            
+                                                                                            data:"Name":"vtx_bbl_x","Value":"-12.4486"
+                                                                                             } 2262                                                                                        
+                                                                                        header:, { 2264                                                                                            
+                                                                                            data:"Name":"vtx_bbl_y","Value":"-0.0734427"
+                                                                                             } 2304                                                                                        
+                                                                                        header:, { 2306                                                                                            
+                                                                                            data:"Name":"vtx_bbl_z","Value":"-11.8509"
+                                                                                             } 2344                                                                                        
+                                                                                        header:, { 2346                                                                                            
+                                                                                            data:"Name":"vtx_h_x","Value":"0.0128355"
+                                                                                             } 2383                                                                                        
+                                                                                        header:, { 2385                                                                                            
+                                                                                            data:"Name":"vtx_h_y","Value":"0.00588739"
+                                                                                             } 2423                                                                                        
+                                                                                        header:, { 2425                                                                                            
+                                                                                            data:"Name":"vtx_h_z","Value":"0.0105866"
+                                                                                             } 2462                                                                                        
+                                                                                        header:, { 2464                                                                                            
+                                                                                            data:"Name":"uv_0_bbl_x","Value":"0.00593497"
+                                                                                             } 2505                                                                                        
+                                                                                        header:, { 2507                                                                                            
+                                                                                            data:"Name":"uv_0_bbl_y","Value":"0.0198994"
+                                                                                             } 2547                                                                                        
+                                                                                        header:, { 2549                                                                                            
+                                                                                            data:"Name":"uv_0_h_x","Value":"7.06762e-05"
+                                                                                             } 2589                                                                                        
+                                                                                        header:, { 2591                                                                                            
+                                                                                            data:"Name":"uv_0_h_y","Value":"5.69778e-05"
+                                                                                             } 2631                                                                                        
+                                                                                        data:None                                                                                         ] 2632                                                                                    
+                                                                                    data:None
+                                                                                     } 2633                                                                                
+                                                                                header:,"VertexAttributeList": { 2657                                                                                    
+                                                                                    header:"Normal": { 2667                                                                                        
+                                                                                        header:"UniqueID":12,"Array": { 2690                                                                                            
+                                                                                            header:"Uint32Array": { 2705                                                                                                
+                                                                                                data:"File":"model_file.bin.gz","Size":3757,"Offset":3552,"Encoding":"varint"
+                                                                                                 } 2778                                                                                            
+                                                                                            data:None
+                                                                                             } 2779                                                                                        
+                                                                                        data:,"ItemSize":2,"Type":"ARRAY_BUFFER"
+                                                                                         } 2815                                                                                    
+                                                                                    header:,"Tangent": { 2827                                                                                        
+                                                                                        header:"UniqueID":14,"Array": { 2850                                                                                            
+                                                                                            header:"Uint32Array": { 2865                                                                                                
+                                                                                                data:"File":"model_file.bin.gz","Size":3757,"Offset":17292,"Encoding":"varint"
+                                                                                                 } 2939                                                                                            
+                                                                                            data:None
+                                                                                             } 2940                                                                                        
+                                                                                        data:,"ItemSize":2,"Type":"ARRAY_BUFFER"
+                                                                                         } 2976                                                                                    
+                                                                                    header:,"TexCoord0": { 2990                                                                                        
+                                                                                        header:"UniqueID":13,"Array": { 3013                                                                                            
+                                                                                            header:"Int32Array": { 3027                                                                                                
+                                                                                                data:"File":"model_file.bin.gz","Size":3757,"Offset":31080,"Encoding":"varint"
+                                                                                                 } 3101                                                                                            
+                                                                                            data:None
+                                                                                             } 3102                                                                                        
+                                                                                        data:,"ItemSize":2,"Type":"ARRAY_BUFFER"
+                                                                                         } 3138                                                                                    
+                                                                                    header:,"Vertex": { 3149                                                                                        
+                                                                                        header:"UniqueID":11,"Array": { 3172                                                                                            
+                                                                                            header:"Int32Array": { 3186                                                                                                
+                                                                                                data:"File":"model_file.bin.gz","Size":3757,"Offset":41116,"Encoding":"varint"
+                                                                                                 } 3260                                                                                            
+                                                                                            data:None
+                                                                                             } 3261                                                                                        
+                                                                                        data:,"ItemSize":3,"Type":"ARRAY_BUFFER"
+                                                                                         } 3297                                                                                    
+                                                                                    data:None
+                                                                                     } 3298                                                                                
+                                                                                data:None
+                                                                                 } 3299                                                                            
+                                                                            data:None
+                                                                             } 3300                                                                        
+                                                                        header:, { 3302                                                                            
+                                                                            header:"osg.Geometry": { 3318                                                                                
+                                                                                header:"UniqueID":19,"Name":"gun_01_1_0","PrimitiveSetList": [ 3372                                                                                    
+                                                                                    header:None { 3373                                                                                        
+                                                                                        header:"DrawElementsUShort": { 3395                                                                                            
+                                                                                            header:"UniqueID":21,"Indices": { 3420                                                                                                
+                                                                                                header:"UniqueID":22,"Array": { 3443                                                                                                    
+                                                                                                    header:"Uint16Array": { 3458                                                                                                        
+                                                                                                        data:"File":"model_file_wireframe.bin.gz","Size":15254,"Offset":0,"Encoding":"varint"
+                                                                                                         } 3539                                                                                                    
+                                                                                                    data:None
+                                                                                                     } 3540                                                                                                
+                                                                                                data:,"ItemSize":1,"Type":"ELEMENT_ARRAY_BUFFER"
+                                                                                                 } 3584                                                                                            
+                                                                                            data:,"Mode":"LINES"
+                                                                                             } 3600                                                                                        
+                                                                                        data:None
+                                                                                         } 3601                                                                                    
+                                                                                    data:None                                                                                     ] 3602                                                                                
+                                                                                header:,"UserDataContainer": { 3624                                                                                    
+                                                                                    header:"UniqueID":20,"Values": [ 3648                                                                                        
+                                                                                        header:None { 3649                                                                                            
+                                                                                            data:"Name":"wireframe","Value":"1"
+                                                                                             } 3680                                                                                        
+                                                                                        header:, { 3682                                                                                            
+                                                                                            data:"Name":"attributes","Value":"1"
+                                                                                             } 3714                                                                                        
+                                                                                        data:None                                                                                         ] 3715                                                                                    
+                                                                                    data:None
+                                                                                     } 3716                                                                                
+                                                                                header:,"VertexAttributeList": { 3740                                                                                    
+                                                                                    header:"Vertex": { 3750                                                                                        
+                                                                                        data:"UniqueID":11
+                                                                                         } 3764                                                                                    
+                                                                                    data:None
+                                                                                     } 3765                                                                                
+                                                                                data:None
+                                                                                 } 3766                                                                            
+                                                                            data:None
+                                                                             } 3767                                                                        
+                                                                        data:None                                                                         ] 3768                                                                    
+                                                                    data:None
+                                                                     } 3769                                                                
+                                                                data:None
+                                                                 } 3770                                                            
+                                                            data:None                                                             ] 3771                                                        
+                                                        header:,"Matrix": [ 3782                                                            
+                                                            data:1,0,-0,0,0,1,0,0,0,0,1,0,-0.688599,-5.95235,0.908201,1
+                                                             ] 3837                                                        
+                                                        data:None
+                                                         } 3838                                                    
+                                                    data:None
+                                                     } 3839                                                
+                                                data:None                                                 ] 3840                                            
+                                            header:,"Matrix": [ 3851                                                
+                                                data:1,0,0,0,0,2.22045e-16,-1,0,0,1,2.22045e-16,0,0,0,0,1
+                                                 ] 3904                                            
+                                            data:None
+                                             } 3905                                        
+                                        data:None
+                                         } 3906                                    
+                                    header:, { 3908                                        
+                                        header:"osg.MatrixTransform": { 3931                                            
+                                            header:"UniqueID":23,"Name":"Object003","Children": [ 3976                                                
+                                                header:None { 3977                                                    
+                                                    header:"osg.MatrixTransform": { 4000                                                        
+                                                        header:"UniqueID":24,"Children": [ 4026                                                            
+                                                            header:None { 4027                                                                
+                                                                header:"osg.Node": { 4039                                                                    
+                                                                    header:"UniqueID":25,"Name":"Object003","Children": [ 4084                                                                        
+                                                                        header:None { 4085                                                                            
+                                                                            header:"osg.Geometry": { 4101                                                                                
+                                                                                header:"UniqueID":26,"Name":"Object003_3_0","PrimitiveSetList": [ 4158                                                                                    
+                                                                                    header:None { 4159                                                                                        
+                                                                                        header:"DrawElementsUInt": { 4179                                                                                            
+                                                                                            header:"UniqueID":35,"Indices": { 4204                                                                                                
+                                                                                                header:"UniqueID":36,"Array": { 4227                                                                                                    
+                                                                                                    header:"Uint32Array": { 4242                                                                                                        
+                                                                                                        data:"File":"model_file.bin.gz","Size":20,"Offset":54124,"Encoding":"varint"
+                                                                                                         } 4314                                                                                                    
+                                                                                                    data:None
+                                                                                                     } 4315                                                                                                
+                                                                                                data:,"ItemSize":1,"Type":"ELEMENT_ARRAY_BUFFER"
+                                                                                                 } 4359                                                                                            
+                                                                                            data:,"Mode":"TRIANGLE_STRIP"
+                                                                                             } 4384                                                                                        
+                                                                                        data:None
+                                                                                         } 4385                                                                                    
+                                                                                    header:, { 4387                                                                                        
+                                                                                        header:"DrawElementsUByte": { 4408                                                                                            
+                                                                                            header:"UniqueID":37,"Indices": { 4433                                                                                                
+                                                                                                header:"UniqueID":38,"Array": { 4456                                                                                                    
+                                                                                                    header:"Uint8Array": { 4470                                                                                                        
+                                                                                                        data:"File":"model_file.bin.gz","Size":6,"Offset":54152
+                                                                                                         } 4521                                                                                                    
+                                                                                                    data:None
+                                                                                                     } 4522                                                                                                
+                                                                                                data:,"ItemSize":1,"Type":"ELEMENT_ARRAY_BUFFER"
+                                                                                                 } 4566                                                                                            
+                                                                                            data:,"Mode":"TRIANGLES"
+                                                                                             } 4586                                                                                        
+                                                                                        data:None
+                                                                                         } 4587                                                                                    
+                                                                                    data:None                                                                                     ] 4588                                                                                
+                                                                                header:,"StateSet": { 4601                                                                                    
+                                                                                    header:"osg.StateSet": { 4617                                                                                        
+                                                                                        header:"UniqueID":27,"AttributeList": [ 4648                                                                                            
+                                                                                            header:None { 4649                                                                                                
+                                                                                                header:"osg.Material": { 4665                                                                                                    
+                                                                                                    header:"UniqueID":29,"Name":"3","Ambient": [ 4701                                                                                                        
+                                                                                                        data:0.196078,0.196078,0.866667,1
+                                                                                                         ] 4730                                                                                                    
+                                                                                                    header:,"Diffuse": [ 4742                                                                                                        
+                                                                                                        data:0.196078,0.196078,0.866667,1
+                                                                                                         ] 4771                                                                                                    
+                                                                                                    header:,"Emission": [ 4784                                                                                                        
+                                                                                                        data:0,0,0,1
+                                                                                                         ] 4792                                                                                                    
+                                                                                                    header:,"Shininess":2,"Specular": [ 4819                                                                                                        
+                                                                                                        data:0,0,0,1
+                                                                                                         ] 4827                                                                                                    
+                                                                                                    data:None
+                                                                                                     } 4828                                                                                                
+                                                                                                data:None
+                                                                                                 } 4829                                                                                            
+                                                                                            data:None                                                                                             ] 4830                                                                                        
+                                                                                        header:,"UserDataContainer": { 4852                                                                                            
+                                                                                            header:"UniqueID":28,"Values": [ 4876                                                                                                
+                                                                                                header:None { 4877                                                                                                    
+                                                                                                    header:"Name":"LambertAmbientColor","Value":" [ 4916                                                                                                        
+                                                                                                        data:0.196078,0.196078,0.866667
+                                                                                                         ] 4943                                                                                                    
+                                                                                                    data:"
+                                                                                                     } 4945                                                                                                
+                                                                                                header:, { 4947                                                                                                    
+                                                                                                    data:"Name":"LambertAmbientFactor","Value":"1"
+                                                                                                     } 4989                                                                                                
+                                                                                                header:, { 4991                                                                                                    
+                                                                                                    data:"Name":"LambertBumpFactor","Value":"1"
+                                                                                                     } 5030                                                                                                
+                                                                                                header:, { 5032                                                                                                    
+                                                                                                    header:"Name":"LambertDiffuseColor","Value":" [ 5071                                                                                                        
+                                                                                                        data:0.196078,0.196078,0.866667
+                                                                                                         ] 5098                                                                                                    
+                                                                                                    data:"
+                                                                                                     } 5100                                                                                                
+                                                                                                header:, { 5102                                                                                                    
+                                                                                                    data:"Name":"LambertDiffuseFactor","Value":"1"
+                                                                                                     } 5144                                                                                                
+                                                                                                header:, { 5146                                                                                                    
+                                                                                                    header:"Name":"LambertEmissiveColor","Value":" [ 5186                                                                                                        
+                                                                                                        data:0,0,0
+                                                                                                         ] 5192                                                                                                    
+                                                                                                    data:"
+                                                                                                     } 5194                                                                                                
+                                                                                                header:, { 5196                                                                                                    
+                                                                                                    data:"Name":"LambertEmissiveFactor","Value":"0"
+                                                                                                     } 5239                                                                                                
+                                                                                                header:, { 5241                                                                                                    
+                                                                                                    data:"Name":"LambertTransparencyFactor","Value":"0"
+                                                                                                     } 5288                                                                                                
+                                                                                                header:, { 5290                                                                                                    
+                                                                                                    data:"Name":"PhongReflectionFactor","Value":"1"
+                                                                                                     } 5333                                                                                                
+                                                                                                header:, { 5335                                                                                                    
+                                                                                                    data:"Name":"PhongShininess","Value":"2"
+                                                                                                     } 5371                                                                                                
+                                                                                                header:, { 5373                                                                                                    
+                                                                                                    header:"Name":"PhongSpecularColor","Value":" [ 5411                                                                                                        
+                                                                                                        data:0.9,0.9,0.9
+                                                                                                         ] 5423                                                                                                    
+                                                                                                    data:"
+                                                                                                     } 5425                                                                                                
+                                                                                                header:, { 5427                                                                                                    
+                                                                                                    data:"Name":"PhongSpecularFactor","Value":"0"
+                                                                                                     } 5468                                                                                                
+                                                                                                header:, { 5470                                                                                                    
+                                                                                                    data:"Name":"source","Value":"fbx"
+                                                                                                     } 5500                                                                                                
+                                                                                                header:, { 5502                                                                                                    
+                                                                                                    data:"Name":"UniqueID","Value":"2"
+                                                                                                     } 5532                                                                                                
+                                                                                                data:None                                                                                                 ] 5533                                                                                            
+                                                                                            data:None
+                                                                                             } 5534                                                                                        
+                                                                                        data:None
+                                                                                         } 5535                                                                                    
+                                                                                    data:None
+                                                                                     } 5536                                                                                
+                                                                                header:,"UserDataContainer": { 5558                                                                                    
+                                                                                    header:"UniqueID":30,"Values": [ 5582                                                                                        
+                                                                                        header:None { 5583                                                                                            
+                                                                                            data:"Name":"attributes","Value":"55"
+                                                                                             } 5616                                                                                        
+                                                                                        header:, { 5618                                                                                            
+                                                                                            data:"Name":"vertex_bits","Value":"8"
+                                                                                             } 5651                                                                                        
+                                                                                        header:, { 5653                                                                                            
+                                                                                            data:"Name":"vertex_mode","Value":"3"
+                                                                                             } 5686                                                                                        
+                                                                                        header:, { 5688                                                                                            
+                                                                                            data:"Name":"uv_0_bits","Value":"16"
+                                                                                             } 5720                                                                                        
+                                                                                        header:, { 5722                                                                                            
+                                                                                            data:"Name":"uv_0_mode","Value":"3"
+                                                                                             } 5753                                                                                        
+                                                                                        header:, { 5755                                                                                            
+                                                                                            data:"Name":"epsilon","Value":"0.25"
+                                                                                             } 5787                                                                                        
+                                                                                        header:, { 5789                                                                                            
+                                                                                            data:"Name":"nphi","Value":"720"
+                                                                                             } 5817                                                                                        
+                                                                                        header:, { 5819                                                                                            
+                                                                                            data:"Name":"triangle_mode","Value":"7"
+                                                                                             } 5854                                                                                        
+                                                                                        header:, { 5856                                                                                            
+                                                                                            data:"Name":"vertex_obits","Value":"10"
+                                                                                             } 5891                                                                                        
+                                                                                        header:, { 5893                                                                                            
+                                                                                            data:"Name":"vtx_bbl_x","Value":"-0.383289"
+                                                                                             } 5932                                                                                        
+                                                                                        header:, { 5934                                                                                            
+                                                                                            data:"Name":"vtx_bbl_y","Value":"4.10071"
+                                                                                             } 5971                                                                                        
+                                                                                        header:, { 5973                                                                                            
+                                                                                            data:"Name":"vtx_bbl_z","Value":"-9.94533"
+                                                                                             } 6011                                                                                        
+                                                                                        header:, { 6013                                                                                            
+                                                                                            data:"Name":"vtx_h_x","Value":"0.0128355"
+                                                                                             } 6050                                                                                        
+                                                                                        header:, { 6052                                                                                            
+                                                                                            data:"Name":"vtx_h_y","Value":"0.00588739"
+                                                                                             } 6090                                                                                        
+                                                                                        header:, { 6092                                                                                            
+                                                                                            data:"Name":"vtx_h_z","Value":"0.0105866"
+                                                                                             } 6129                                                                                        
+                                                                                        header:, { 6131                                                                                            
+                                                                                            data:"Name":"uv_0_bbl_x","Value":"0.00683642"
+                                                                                             } 6172                                                                                        
+                                                                                        header:, { 6174                                                                                            
+                                                                                            data:"Name":"uv_0_bbl_y","Value":"0.562914"
+                                                                                             } 6213                                                                                        
+                                                                                        header:, { 6215                                                                                            
+                                                                                            data:"Name":"uv_0_h_x","Value":"6.99786e-05"
+                                                                                             } 6255                                                                                        
+                                                                                        header:, { 6257                                                                                            
+                                                                                            data:"Name":"uv_0_h_y","Value":"3.96537e-05"
+                                                                                             } 6297                                                                                        
+                                                                                        data:None                                                                                         ] 6298                                                                                    
+                                                                                    data:None
+                                                                                     } 6299                                                                                
+                                                                                header:,"VertexAttributeList": { 6323                                                                                    
+                                                                                    header:"Normal": { 6333                                                                                        
+                                                                                        header:"UniqueID":32,"Array": { 6356                                                                                            
+                                                                                            header:"Uint32Array": { 6371                                                                                                
+                                                                                                data:"File":"model_file.bin.gz","Size":64,"Offset":54160,"Encoding":"varint"
+                                                                                                 } 6443                                                                                            
+                                                                                            data:None
+                                                                                             } 6444                                                                                        
+                                                                                        data:,"ItemSize":2,"Type":"ARRAY_BUFFER"
+                                                                                         } 6480                                                                                    
+                                                                                    header:,"Tangent": { 6492                                                                                        
+                                                                                        header:"UniqueID":34,"Array": { 6515                                                                                            
+                                                                                            header:"Uint32Array": { 6530                                                                                                
+                                                                                                data:"File":"model_file.bin.gz","Size":64,"Offset":54384,"Encoding":"varint"
+                                                                                                 } 6602                                                                                            
+                                                                                            data:None
+                                                                                             } 6603                                                                                        
+                                                                                        data:,"ItemSize":2,"Type":"ARRAY_BUFFER"
+                                                                                         } 6639                                                                                    
+                                                                                    header:,"TexCoord0": { 6653                                                                                        
+                                                                                        header:"UniqueID":33,"Array": { 6676                                                                                            
+                                                                                            header:"Int32Array": { 6690                                                                                                
+                                                                                                data:"File":"model_file.bin.gz","Size":64,"Offset":54632,"Encoding":"varint"
+                                                                                                 } 6762                                                                                            
+                                                                                            data:None
+                                                                                             } 6763                                                                                        
+                                                                                        data:,"ItemSize":2,"Type":"ARRAY_BUFFER"
+                                                                                         } 6799                                                                                    
+                                                                                    header:,"Vertex": { 6810                                                                                        
+                                                                                        header:"UniqueID":31,"Array": { 6833                                                                                            
+                                                                                            header:"Int32Array": { 6847                                                                                                
+                                                                                                data:"File":"model_file.bin.gz","Size":64,"Offset":54808,"Encoding":"varint"
+                                                                                                 } 6919                                                                                            
+                                                                                            data:None
+                                                                                             } 6920                                                                                        
+                                                                                        data:,"ItemSize":3,"Type":"ARRAY_BUFFER"
+                                                                                         } 6956                                                                                    
+                                                                                    data:None
+                                                                                     } 6957                                                                                
+                                                                                data:None
+                                                                                 } 6958                                                                            
+                                                                            data:None
+                                                                             } 6959                                                                        
+                                                                        header:, { 6961                                                                            
+                                                                            header:"osg.Geometry": { 6977                                                                                
+                                                                                header:"UniqueID":39,"Name":"Object003_3_0","PrimitiveSetList": [ 7034                                                                                    
+                                                                                    header:None { 7035                                                                                        
+                                                                                        header:"DrawElementsUByte": { 7056                                                                                            
+                                                                                            header:"UniqueID":41,"Indices": { 7081                                                                                                
+                                                                                                header:"UniqueID":42,"Array": { 7104                                                                                                    
+                                                                                                    header:"Uint8Array": { 7118                                                                                                        
+                                                                                                        data:"File":"model_file_wireframe.bin.gz","Size":238,"Offset":30016
+                                                                                                         } 7181                                                                                                    
+                                                                                                    data:None
+                                                                                                     } 7182                                                                                                
+                                                                                                data:,"ItemSize":1,"Type":"ELEMENT_ARRAY_BUFFER"
+                                                                                                 } 7226                                                                                            
+                                                                                            data:,"Mode":"LINES"
+                                                                                             } 7242                                                                                        
+                                                                                        data:None
+                                                                                         } 7243                                                                                    
+                                                                                    data:None                                                                                     ] 7244                                                                                
+                                                                                header:,"UserDataContainer": { 7266                                                                                    
+                                                                                    header:"UniqueID":40,"Values": [ 7290                                                                                        
+                                                                                        header:None { 7291                                                                                            
+                                                                                            data:"Name":"wireframe","Value":"1"
+                                                                                             } 7322                                                                                        
+                                                                                        header:, { 7324                                                                                            
+                                                                                            data:"Name":"attributes","Value":"1"
+                                                                                             } 7356                                                                                        
+                                                                                        data:None                                                                                         ] 7357                                                                                    
+                                                                                    data:None
+                                                                                     } 7358                                                                                
+                                                                                header:,"VertexAttributeList": { 7382                                                                                    
+                                                                                    header:"Vertex": { 7392                                                                                        
+                                                                                        data:"UniqueID":31
+                                                                                         } 7406                                                                                    
+                                                                                    data:None
+                                                                                     } 7407                                                                                
+                                                                                data:None
+                                                                                 } 7408                                                                            
+                                                                            data:None
+                                                                             } 7409                                                                        
+                                                                        data:None                                                                         ] 7410                                                                    
+                                                                    data:None
+                                                                     } 7411                                                                
+                                                                data:None
+                                                                 } 7412                                                            
+                                                            data:None                                                             ] 7413                                                        
+                                                        header:,"Matrix": [ 7424                                                            
+                                                            data:1,0,-0,0,0,1,0,0,0,0,1,0,-0.688599,-5.95235,0.908201,1
+                                                             ] 7479                                                        
+                                                        data:None
+                                                         } 7480                                                    
+                                                    data:None
+                                                     } 7481                                                
+                                                data:None                                                 ] 7482                                            
+                                            header:,"Matrix": [ 7493                                                
+                                                data:1,0,0,0,0,2.22045e-16,-1,0,0,1,2.22045e-16,0,0,0,0,1
+                                                 ] 7546                                            
+                                            data:None
+                                             } 7547                                        
+                                        data:None
+                                         } 7548                                    
+                                    header:, { 7550                                        
+                                        header:"osg.MatrixTransform": { 7573                                            
+                                            header:"UniqueID":43,"Name":"Box001","Children": [ 7615                                                
+                                                header:None { 7616                                                    
+                                                    header:"osg.Node": { 7628                                                        
+                                                        header:"UniqueID":44,"Name":"Box001","Children": [ 7670                                                            
+                                                            header:None { 7671                                                                
+                                                                header:"osg.Geometry": { 7687                                                                    
+                                                                    header:"UniqueID":45,"Name":"Box001_2_0","PrimitiveSetList": [ 7741                                                                        
+                                                                        header:None { 7742                                                                            
+                                                                            header:"DrawElementsUInt": { 7762                                                                                
+                                                                                header:"UniqueID":54,"Indices": { 7787                                                                                    
+                                                                                    header:"UniqueID":55,"Array": { 7810                                                                                        
+                                                                                        header:"Uint32Array": { 7825                                                                                            
+                                                                                            data:"File":"model_file.bin.gz","Size":1247,"Offset":55044,"Encoding":"varint"
+                                                                                             } 7899                                                                                        
+                                                                                        data:None
+                                                                                         } 7900                                                                                    
+                                                                                    data:,"ItemSize":1,"Type":"ELEMENT_ARRAY_BUFFER"
+                                                                                     } 7944                                                                                
+                                                                                data:,"Mode":"TRIANGLE_STRIP"
+                                                                                 } 7969                                                                            
+                                                                            data:None
+                                                                             } 7970                                                                        
+                                                                        header:, { 7972                                                                            
+                                                                            header:"DrawElementsUShort": { 7994                                                                                
+                                                                                header:"UniqueID":56,"Indices": { 8019                                                                                    
+                                                                                    header:"UniqueID":57,"Array": { 8042                                                                                        
+                                                                                        header:"Uint16Array": { 8057                                                                                            
+                                                                                            data:"File":"model_file.bin.gz","Size":48,"Offset":56600,"Encoding":"varint"
+                                                                                             } 8129                                                                                        
+                                                                                        data:None
+                                                                                         } 8130                                                                                    
+                                                                                    data:,"ItemSize":1,"Type":"ELEMENT_ARRAY_BUFFER"
+                                                                                     } 8174                                                                                
+                                                                                data:,"Mode":"TRIANGLES"
+                                                                                 } 8194                                                                            
+                                                                            data:None
+                                                                             } 8195                                                                        
+                                                                        data:None                                                                         ] 8196                                                                    
+                                                                    header:,"StateSet": { 8209                                                                        
+                                                                        header:"osg.StateSet": { 8225                                                                            
+                                                                            header:"UniqueID":46,"AttributeList": [ 8256                                                                                
+                                                                                header:None { 8257                                                                                    
+                                                                                    header:"osg.Material": { 8273                                                                                        
+                                                                                        header:"UniqueID":48,"Name":"2","Ambient": [ 8309                                                                                            
+                                                                                            data:0.419608,0.917647,0.223529,1
+                                                                                             ] 8338                                                                                        
+                                                                                        header:,"Diffuse": [ 8350                                                                                            
+                                                                                            data:0.419608,0.917647,0.223529,1
+                                                                                             ] 8379                                                                                        
+                                                                                        header:,"Emission": [ 8392                                                                                            
+                                                                                            data:0,0,0,1
+                                                                                             ] 8400                                                                                        
+                                                                                        header:,"Shininess":13.9288,"Specular": [ 8433                                                                                            
+                                                                                            data:0.873,0.873,0.873,1
+                                                                                             ] 8453                                                                                        
+                                                                                        data:None
+                                                                                         } 8454                                                                                    
+                                                                                    data:None
+                                                                                     } 8455                                                                                
+                                                                                data:None                                                                                 ] 8456                                                                            
+                                                                            header:,"UserDataContainer": { 8478                                                                                
+                                                                                header:"UniqueID":47,"Values": [ 8502                                                                                    
+                                                                                    header:None { 8503                                                                                        
+                                                                                        header:"Name":"LambertAmbientColor","Value":" [ 8542                                                                                            
+                                                                                            data:0.419608,0.917647,0.223529
+                                                                                             ] 8569                                                                                        
+                                                                                        data:"
+                                                                                         } 8571                                                                                    
+                                                                                    header:, { 8573                                                                                        
+                                                                                        data:"Name":"LambertAmbientFactor","Value":"1"
+                                                                                         } 8615                                                                                    
+                                                                                    header:, { 8617                                                                                        
+                                                                                        data:"Name":"LambertBumpFactor","Value":"1"
+                                                                                         } 8656                                                                                    
+                                                                                    header:, { 8658                                                                                        
+                                                                                        header:"Name":"LambertDiffuseColor","Value":" [ 8697                                                                                            
+                                                                                            data:0.419608,0.917647,0.223529
+                                                                                             ] 8724                                                                                        
+                                                                                        data:"
+                                                                                         } 8726                                                                                    
+                                                                                    header:, { 8728                                                                                        
+                                                                                        data:"Name":"LambertDiffuseFactor","Value":"1"
+                                                                                         } 8770                                                                                    
+                                                                                    header:, { 8772                                                                                        
+                                                                                        header:"Name":"LambertEmissiveColor","Value":" [ 8812                                                                                            
+                                                                                            data:0,0,0
+                                                                                             ] 8818                                                                                        
+                                                                                        data:"
+                                                                                         } 8820                                                                                    
+                                                                                    header:, { 8822                                                                                        
+                                                                                        data:"Name":"LambertEmissiveFactor","Value":"0"
+                                                                                         } 8865                                                                                    
+                                                                                    header:, { 8867                                                                                        
+                                                                                        data:"Name":"LambertTransparencyFactor","Value":"0"
+                                                                                         } 8914                                                                                    
+                                                                                    header:, { 8916                                                                                        
+                                                                                        data:"Name":"PhongReflectionFactor","Value":"1"
+                                                                                         } 8959                                                                                    
+                                                                                    header:, { 8961                                                                                        
+                                                                                        data:"Name":"PhongShininess","Value":"13.9288"
+                                                                                         } 9003                                                                                    
+                                                                                    header:, { 9005                                                                                        
+                                                                                        header:"Name":"PhongSpecularColor","Value":" [ 9043                                                                                            
+                                                                                            data:0.9,0.9,0.9
+                                                                                             ] 9055                                                                                        
+                                                                                        data:"
+                                                                                         } 9057                                                                                    
+                                                                                    header:, { 9059                                                                                        
+                                                                                        data:"Name":"PhongSpecularFactor","Value":"0.97"
+                                                                                         } 9103                                                                                    
+                                                                                    header:, { 9105                                                                                        
+                                                                                        data:"Name":"source","Value":"fbx"
+                                                                                         } 9135                                                                                    
+                                                                                    header:, { 9137                                                                                        
+                                                                                        data:"Name":"UniqueID","Value":"3"
+                                                                                         } 9167                                                                                    
+                                                                                    data:None                                                                                     ] 9168                                                                                
+                                                                                data:None
+                                                                                 } 9169                                                                            
+                                                                            data:None
+                                                                             } 9170                                                                        
+                                                                        data:None
+                                                                         } 9171                                                                    
+                                                                    header:,"UserDataContainer": { 9193                                                                        
+                                                                        header:"UniqueID":49,"Values": [ 9217                                                                            
+                                                                            header:None { 9218                                                                                
+                                                                                data:"Name":"attributes","Value":"55"
+                                                                                 } 9251                                                                            
+                                                                            header:, { 9253                                                                                
+                                                                                data:"Name":"vertex_bits","Value":"12"
+                                                                                 } 9287                                                                            
+                                                                            header:, { 9289                                                                                
+                                                                                data:"Name":"vertex_mode","Value":"3"
+                                                                                 } 9322                                                                            
+                                                                            header:, { 9324                                                                                
+                                                                                data:"Name":"uv_0_bits","Value":"14"
+                                                                                 } 9356                                                                            
+                                                                            header:, { 9358                                                                                
+                                                                                data:"Name":"uv_0_mode","Value":"3"
+                                                                                 } 9389                                                                            
+                                                                            header:, { 9391                                                                                
+                                                                                data:"Name":"epsilon","Value":"0.25"
+                                                                                 } 9423                                                                            
+                                                                            header:, { 9425                                                                                
+                                                                                data:"Name":"nphi","Value":"720"
+                                                                                 } 9453                                                                            
+                                                                            header:, { 9455                                                                                
+                                                                                data:"Name":"triangle_mode","Value":"7"
+                                                                                 } 9490                                                                            
+                                                                            header:, { 9492                                                                                
+                                                                                data:"Name":"vtx_bbl_x","Value":"-2.45506"
+                                                                                 } 9530                                                                            
+                                                                            header:, { 9532                                                                                
+                                                                                data:"Name":"vtx_bbl_y","Value":"-2.45506"
+                                                                                 } 9570                                                                            
+                                                                            header:, { 9572                                                                                
+                                                                                data:"Name":"vtx_bbl_z","Value":"0.666664"
+                                                                                 } 9610                                                                            
+                                                                            header:, { 9612                                                                                
+                                                                                data:"Name":"vtx_h_x","Value":"0.0103357"
+                                                                                 } 9649                                                                            
+                                                                            header:, { 9651                                                                                
+                                                                                data:"Name":"vtx_h_y","Value":"0.00239869"
+                                                                                 } 9689                                                                            
+                                                                            header:, { 9691                                                                                
+                                                                                data:"Name":"vtx_h_z","Value":"0.0107863"
+                                                                                 } 9728                                                                            
+                                                                            header:, { 9730                                                                                
+                                                                                data:"Name":"uv_0_bbl_x","Value":"0"
+                                                                                 } 9762                                                                            
+                                                                            header:, { 9764                                                                                
+                                                                                data:"Name":"uv_0_bbl_y","Value":"0"
+                                                                                 } 9796                                                                            
+                                                                            header:, { 9798                                                                                
+                                                                                data:"Name":"uv_0_h_x","Value":"0.000122085"
+                                                                                 } 9838                                                                            
+                                                                            header:, { 9840                                                                                
+                                                                                data:"Name":"uv_0_h_y","Value":"0.000122085"
+                                                                                 } 9880                                                                            
+                                                                            data:None                                                                             ] 9881                                                                        
+                                                                        data:None
+                                                                         } 9882                                                                    
+                                                                    header:,"VertexAttributeList": { 9906                                                                        
+                                                                        header:"Normal": { 9916                                                                            
+                                                                            header:"UniqueID":51,"Array": { 9939                                                                                
+                                                                                header:"Uint32Array": { 9954                                                                                    
+                                                                                    data:"File":"model_file.bin.gz","Size":958,"Offset":56660,"Encoding":"varint"
+                                                                                     } 10027                                                                                
+                                                                                data:None
+                                                                                 } 10028                                                                            
+                                                                            data:,"ItemSize":2,"Type":"ARRAY_BUFFER"
+                                                                             } 10064                                                                        
+                                                                        header:,"Tangent": { 10076                                                                            
+                                                                            header:"UniqueID":53,"Array": { 10099                                                                                
+                                                                                header:"Uint32Array": { 10114                                                                                    
+                                                                                    data:"File":"model_file.bin.gz","Size":958,"Offset":60100,"Encoding":"varint"
+                                                                                     } 10187                                                                                
+                                                                                data:None
+                                                                                 } 10188                                                                            
+                                                                            data:,"ItemSize":2,"Type":"ARRAY_BUFFER"
+                                                                             } 10224                                                                        
+                                                                        header:,"TexCoord0": { 10238                                                                            
+                                                                            header:"UniqueID":52,"Array": { 10261                                                                                
+                                                                                header:"Int32Array": { 10275                                                                                    
+                                                                                    data:"File":"model_file.bin.gz","Size":958,"Offset":63544,"Encoding":"varint"
+                                                                                     } 10348                                                                                
+                                                                                data:None
+                                                                                 } 10349                                                                            
+                                                                            data:,"ItemSize":2,"Type":"ARRAY_BUFFER"
+                                                                             } 10385                                                                        
+                                                                        header:,"Vertex": { 10396                                                                            
+                                                                            header:"UniqueID":50,"Array": { 10419                                                                                
+                                                                                header:"Int32Array": { 10433                                                                                    
+                                                                                    data:"File":"model_file.bin.gz","Size":958,"Offset":65992,"Encoding":"varint"
+                                                                                     } 10506                                                                                
+                                                                                data:None
+                                                                                 } 10507                                                                            
+                                                                            data:,"ItemSize":3,"Type":"ARRAY_BUFFER"
+                                                                             } 10543                                                                        
+                                                                        data:None
+                                                                         } 10544                                                                    
+                                                                    data:None
+                                                                     } 10545                                                                
+                                                                data:None
+                                                                 } 10546                                                            
+                                                            header:, { 10548                                                                
+                                                                header:"osg.Geometry": { 10564                                                                    
+                                                                    header:"UniqueID":58,"Name":"Box001_2_0","PrimitiveSetList": [ 10618                                                                        
+                                                                        header:None { 10619                                                                            
+                                                                            header:"DrawElementsUShort": { 10641                                                                                
+                                                                                header:"UniqueID":60,"Indices": { 10666                                                                                    
+                                                                                    header:"UniqueID":61,"Array": { 10689                                                                                        
+                                                                                        header:"Uint16Array": { 10704                                                                                            
+                                                                                            data:"File":"model_file_wireframe.bin.gz","Size":4524,"Offset":30256,"Encoding":"varint"
+                                                                                             } 10788                                                                                        
+                                                                                        data:None
+                                                                                         } 10789                                                                                    
+                                                                                    data:,"ItemSize":1,"Type":"ELEMENT_ARRAY_BUFFER"
+                                                                                     } 10833                                                                                
+                                                                                data:,"Mode":"LINES"
+                                                                                 } 10849                                                                            
+                                                                            data:None
+                                                                             } 10850                                                                        
+                                                                        data:None                                                                         ] 10851                                                                    
+                                                                    header:,"UserDataContainer": { 10873                                                                        
+                                                                        header:"UniqueID":59,"Values": [ 10897                                                                            
+                                                                            header:None { 10898                                                                                
+                                                                                data:"Name":"wireframe","Value":"1"
+                                                                                 } 10929                                                                            
+                                                                            header:, { 10931                                                                                
+                                                                                data:"Name":"attributes","Value":"1"
+                                                                                 } 10963                                                                            
+                                                                            data:None                                                                             ] 10964                                                                        
+                                                                        data:None
+                                                                         } 10965                                                                    
+                                                                    header:,"VertexAttributeList": { 10989                                                                        
+                                                                        header:"Vertex": { 10999                                                                            
+                                                                            data:"UniqueID":50
+                                                                             } 11013                                                                        
+                                                                        data:None
+                                                                         } 11014                                                                    
+                                                                    data:None
+                                                                     } 11015                                                                
+                                                                data:None
+                                                                 } 11016                                                            
+                                                            data:None                                                             ] 11017                                                        
+                                                        data:None
+                                                         } 11018                                                    
+                                                    data:None
+                                                     } 11019                                                
+                                                data:None                                                 ] 11020                                            
+                                            header:,"Matrix": [ 11031                                                
+                                                data:0.684262,0,0,0,0,1.51937e-16,-0.684262,0,0,0.684262,1.51937e-16,0,0.751592,-9.57691,0,1
+                                                 ] 11119                                            
+                                            data:None
+                                             } 11120                                        
+                                        data:None
+                                         } 11121                                    
+                                    data:None                                     ] 11122                                
+                                header:,"Matrix": [ 11133                                    
+                                    data:1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1
+                                     ] 11165                                
+                                data:None
+                                 } 11166                            
+                            data:None
+                             } 11167                        
+                        data:None                         ] 11168                    
+                    header:,"Matrix": [ 11179                        
+                        data:1,0,0,0,0,0,1,0,0,-1,0,0,0,0,0,1
+                         ] 11212                    
+                    header:,"UserDataContainer": { 11234                        
+                        header:"UniqueID":1,"Values": [ 11257                            
+                            header:None { 11258                                
+                                data:"Name":"source","Value":"fbx"
+                                 } 11288                            
+                            header:, { 11290                                
+                                data:"Name":"authoring_tool","Value":"3dsMax"
+                                 } 11331                            
+                            data:None                             ] 11332                        
+                        data:None
+                         } 11333                    
+                    data:None
+                     } 11334                
+                data:None
+                 } 11335            
+            data:None             ] 11336        
+        data:None
+         } 11337    
+    data:None
+     } 11338

@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e24a62eb5d524cd3b323c691e8e55a5, type: 3}
+  m_Name: QualitySettings Plan
+  m_EditorClassIdentifier: 
+  automationPlanId: f66a4205-32b6-4f9d-949e-f23f7a825789
+  firstEntry: {fileID: 11400004}
+  hideInExecutionWindow: 0
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8335df163f4fa433c8a67415db6de35f, type: 3}
+  m_Name: Graph
+  m_EditorClassIdentifier: 
+  nodes:
+  - bounds:
+      x: 158
+      y: 107
+      width: 200
+      height: 57
+    data: {fileID: 11400004}
+  references: []
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e716dc6c1dc44510b48cd9a02e13bd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  automationPlanEntryId: e7cbcc95-8d89-406d-8be9-24516497165f
+  nextEntry: {fileID: 0}
+  action: {fileID: 11400000, guid: 1bfb99b80548446eb904ad12e323705f, type: 2}

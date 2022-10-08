@@ -1,0 +1,305 @@
+{
+  "Generator": "OpenSceneGraph 3.5.6",
+  "Version": 9,
+  "osg.Node": {
+    "Children": [ {
+      "osg.Node": {
+        "UniqueID": 0,
+        "Name": "bby_pao01.obj.cleaner.materialmerger.gles",
+        "Children": [ {
+          "osg.Node": {
+            "UniqueID": 2,
+            "Name": "Object001",
+            "Children": [ {
+              "osg.Geometry": {
+                "UniqueID": 3,
+                "PrimitiveSetList": [ {
+                  "DrawElementsUInt": {
+                    "UniqueID": 14,
+                    "Indices": {
+                      "UniqueID": 15,
+                      "Array": { 
+                        "Uint32Array": { 
+                          "File": "model_file.binz",
+                          "Size": 999,
+                          "Offset": 0,
+                          "Encoding": "varint"
+                        }
+                      },
+                      "ItemSize": 1,
+                      "Type": "ELEMENT_ARRAY_BUFFER"
+                    },
+                    "Mode": "TRIANGLE_STRIP"
+                  }
+                } ],
+                "StateSet": {
+                  "osg.StateSet": {
+                    "UniqueID": 4,
+                    "AttributeList": [ {
+                      "osg.Material": {
+                        "UniqueID": 8,
+                        "Name": "Material__26",
+                        "Ambient": [ 0.588, 0.588, 0.588, 1],
+                        "Diffuse": [ 0.588, 0.588, 0.588, 1],
+                        "Emission": [ 0, 0, 0, 1],
+                        "Shininess": 1.28,
+                        "Specular": [ 0, 0, 0, 1]
+                      }
+                    } ],
+                    "TextureAttributeList": [ [ {
+                      "osg.Texture": {
+                        "UniqueID": 6,
+                        "File": "textures/6db71d56a47641318eee3f4f3420f02b/3c8e06c032cc4605ab45f9c49cf53087.png",
+                        "MagFilter": "LINEAR",
+                        "MinFilter": "LINEAR_MIPMAP_LINEAR",
+                        "WrapS": "REPEAT",
+                        "WrapT": "REPEAT"
+                      }
+                    } ],
+                    [ {
+                      "osg.Texture": {
+                        "UniqueID": 7,
+                        "File": "textures/6db71d56a47641318eee3f4f3420f02b/3c8e06c032cc4605ab45f9c49cf53087.png",
+                        "MagFilter": "LINEAR",
+                        "MinFilter": "LINEAR_MIPMAP_LINEAR",
+                        "WrapS": "REPEAT",
+                        "WrapT": "REPEAT"
+                      }
+                    } ] ],
+                    "UserDataContainer": {
+                      "UniqueID": 5,
+                      "Values": [ {
+                        "Name": "source",
+                        "Value": "wavefront"
+                      },
+                      {
+                        "Name": "ka",
+                        "Value": "[ 0.588, 0.588, 0.588]"
+                      },
+                      {
+                        "Name": "kd",
+                        "Value": "[ 0.588, 0.588, 0.588]"
+                      },
+                      {
+                        "Name": "ks",
+                        "Value": "[ 0, 0, 0]"
+                      },
+                      {
+                        "Name": "ns",
+                        "Value": "10"
+                      },
+                      {
+                        "Name": "sharpness",
+                        "Value": "0"
+                      },
+                      {
+                        "Name": "emissive",
+                        "Value": "[ 0, 0, 0]"
+                      },
+                      {
+                        "Name": "tr",
+                        "Value": "1"
+                      },
+                      {
+                        "Name": "map_kd",
+                        "Value": "0"
+                      },
+                      {
+                        "Name": "map_ka",
+                        "Value": "1"
+                      },
+                      {
+                        "Name": "UniqueID",
+                        "Value": "1"
+                      } ]
+                    }
+                  }
+                },
+                "UserDataContainer": {
+                  "UniqueID": 9,
+                  "Values": [ {
+                    "Name": "attributes",
+                    "Value": "55"
+                  },
+                  {
+                    "Name": "vertex_bits",
+                    "Value": "12"
+                  },
+                  {
+                    "Name": "vertex_mode",
+                    "Value": "3"
+                  },
+                  {
+                    "Name": "uv_0_bits",
+                    "Value": "14"
+                  },
+                  {
+                    "Name": "uv_0_mode",
+                    "Value": "3"
+                  },
+                  {
+                    "Name": "epsilon",
+                    "Value": "0.25"
+                  },
+                  {
+                    "Name": "nphi",
+                    "Value": "720"
+                  },
+                  {
+                    "Name": "triangle_mode",
+                    "Value": "7"
+                  },
+                  {
+                    "Name": "vtx_bbl_x",
+                    "Value": "-0.3965"
+                  },
+                  {
+                    "Name": "vtx_bbl_y",
+                    "Value": "-0.1928"
+                  },
+                  {
+                    "Name": "vtx_bbl_z",
+                    "Value": "0"
+                  },
+                  {
+                    "Name": "vtx_h_x",
+                    "Value": "0.000387445"
+                  },
+                  {
+                    "Name": "vtx_h_y",
+                    "Value": "0.000188373"
+                  },
+                  {
+                    "Name": "vtx_h_z",
+                    "Value": "0.000323644"
+                  },
+                  {
+                    "Name": "uv_0_bbl_x",
+                    "Value": "0.0074"
+                  },
+                  {
+                    "Name": "uv_0_bbl_y",
+                    "Value": "0.0056"
+                  },
+                  {
+                    "Name": "uv_0_h_x",
+                    "Value": "0.000120059"
+                  },
+                  {
+                    "Name": "uv_0_h_y",
+                    "Value": "0.000119668"
+                  } ]
+                },
+                "VertexAttributeList": {
+                  "Normal": {
+                    "UniqueID": 11,
+                    "Array": { 
+                      "Uint32Array": { 
+                        "File": "model_file.binz",
+                        "Size": 1039,
+                        "Offset": 1232,
+                        "Encoding": "varint"
+                      }
+                    },
+                    "ItemSize": 2,
+                    "Type": "ARRAY_BUFFER"
+                  },
+                  "Tangent": {
+                    "UniqueID": 13,
+                    "Array": { 
+                      "Uint32Array": { 
+                        "File": "model_file.binz",
+                        "Size": 1039,
+                        "Offset": 4844,
+                        "Encoding": "varint"
+                      }
+                    },
+                    "ItemSize": 2,
+                    "Type": "ARRAY_BUFFER"
+                  },
+                  "TexCoord0": {
+                    "UniqueID": 12,
+                    "Array": { 
+                      "Int32Array": { 
+                        "File": "model_file.binz",
+                        "Size": 1039,
+                        "Offset": 8388,
+                        "Encoding": "varint"
+                      }
+                    },
+                    "ItemSize": 2,
+                    "Type": "ARRAY_BUFFER"
+                  },
+                  "Vertex": {
+                    "UniqueID": 10,
+                    "Array": { 
+                      "Int32Array": { 
+                        "File": "model_file.binz",
+                        "Size": 1039,
+                        "Offset": 11416,
+                        "Encoding": "varint"
+                      }
+                    },
+                    "ItemSize": 3,
+                    "Type": "ARRAY_BUFFER"
+                  }
+                }
+              }
+            },
+            {
+              "osg.Geometry": {
+                "UniqueID": 16,
+                "PrimitiveSetList": [ {
+                  "DrawElementsUShort": {
+                    "UniqueID": 18,
+                    "Indices": {
+                      "UniqueID": 19,
+                      "Array": { 
+                        "Uint16Array": { 
+                          "File": "model_file_wireframe.binz",
+                          "Size": 3220,
+                          "Offset": 0,
+                          "Encoding": "varint"
+                        }
+                      },
+                      "ItemSize": 1,
+                      "Type": "ELEMENT_ARRAY_BUFFER"
+                    },
+                    "Mode": "LINES"
+                  }
+                } ],
+                "UserDataContainer": {
+                  "UniqueID": 17,
+                  "Values": [ {
+                    "Name": "wireframe",
+                    "Value": "1"
+                  },
+                  {
+                    "Name": "attributes",
+                    "Value": "1"
+                  } ]
+                },
+                "VertexAttributeList": {
+                  "Vertex": {
+                    "UniqueID": 10
+                  }
+                }
+              }
+            } ]
+          }
+        } ],
+        "UserDataContainer": {
+          "UniqueID": 1,
+          "Values": [ {
+            "Name": "authoring_tool",
+            "Value": "3ds Max"
+          },
+          {
+            "Name": "source",
+            "Value": "wavefront"
+          } ]
+        }
+      }
+    } ]
+  }
+}

@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e78934177bebe0545ab566bb787b0282, type: 3}
+  m_Name: Readme
+  m_EditorClassIdentifier: 
+  Icon: {fileID: 2800000, guid: 6cfc520d6403e784cbd849d66e04d1ce, type: 3}
+  Title: Volumetric Pixelization
+  Description:
+    Heading: 
+    Text: 'This sample pixelizes everything that is contained inside a preconfigured
+      volume. The effect works in two passes : The screen and the volumetric sphere
+      mask are stored in an intermediate render texture (Screen = RGB, Mask = A).
+      By enabling the render texture''s mipmaps and by setting the filter mode to
+      point (no interpolation between pixels) we can achieve a virtually free pixelization
+      of the texture. Each mip level will be twice more pixelated than the previous
+      one. You can change the mask for any other at this stage and the rest of the
+      pixelization will still work with your own mask. We then iterate through the
+      render texture and layer by layer sample in a different mip level, according
+      to the wanted amount of pixelization.'
+    LinkText: Created by Raphael Ernaelsten
+    Url: https://twitter.com/RaphErnaelsten
+  PropertiesHeader:
+    Heading: Screen And Mask Properties
+    Text: This shader is responsible for creating a render texture containing the
+      mask to determine where the effect will take place, all its global variables
+      are set through the Volumetric Sphere component that must be added to a game
+      object.
+    LinkText: 
+    Url: 
+  Properties: []
+  AdditionalProperties:
+  - BlockHeader:
+      Heading: Combine Layers Properties
+      Text: This shader uses the render texture from the previous stage and calculates
+        the pixelization effect over the designated area.  Like the previous shader,
+        all its global variables are set through the Volumetric Sphere component.
+      LinkText: 
+      Url: 
+    BlockContent: []
+  AdditionalScripts:
+  - BlockHeader:
+      Heading: Script Properties
+      Text: 
+      LinkText: 
+      Url: 
+    BlockContent:
+    - Heading: Volumetric Sphere
+      Text: 'Sets up all the parameters referring to the effect behavior. '
+      LinkText: 
+      Url: 
+    - Heading: Pixelize
+      Text: Performs the post-processing actions required for the effect to be shown.
+      LinkText: 
+      Url: 
+  LoadedLayout: 0
+  RPType: 0

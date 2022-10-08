@@ -1,0 +1,24 @@
+Arc Target - Basic
+
+This asset is a basic all in one Arc Target Decal script. It works with a basic additive material, line renderer and RayCast to create any variation of thin low performance cost Target Arc effect. The script allows to attach a decal 3D object or spot light with cookie as a target type. The Target reacts to any collider surface normal.
+
+
+Script: Arc Basic
+
+Start Point – Assign Staring point of the Arc (cannot be left blank)
+Use Mouse Pos – Turn on or off the use of mouse or screen center as target position
+Arc Delay – The amount of delay the Arc has in movement
+Target Delay – The amount of delay the Target has in movement
+Hit Distance – The max distance at which the target can reach
+Decal Offset – The normal offset of the target decal to prevent surface clipping
+Target Decal – Assign plane or spot light as target type
+Target Direction – designate the vector in which the decal direction based on hit point normal (X Y Z only)
+Start Color – Arc starting color
+End Color – Arc ending color 
+Section Detail – Number of points on the Arc (20 to 30 recommended)
+Start Size – Controls Arc start width
+End Size - Controls Arc end width
+Arc Height – Controls the height of the Arc in the Y axis
+
+
+Nikolaus Kraus

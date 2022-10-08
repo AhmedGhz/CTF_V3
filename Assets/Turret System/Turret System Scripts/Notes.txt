@@ -1,0 +1,1 @@
+If your turret is a particle turret, the TurretSystem_ParticleTurret.cs needs to be on the gameobject with the particle system, but you don't need to manually add it. It will automatically get added when you drop the particle systems into the "Particles" slots.

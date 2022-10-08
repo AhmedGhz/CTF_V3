@@ -1,0 +1,912 @@
+{
+  "Generator": "OpenSceneGraph 3.5.6",
+  "Version": 9,
+  "osg.Node": {
+    "Children": [ {
+      "osg.Node": {
+        "UniqueID": 0,
+        "Name": "Root",
+        "Children": [ {
+          "osg.MatrixTransform": {
+            "UniqueID": 7,
+            "Name": "Empty",
+            "Children": [ {
+              "osg.MatrixTransform": {
+                "UniqueID": 9,
+                "Name": "Tambor",
+                "Children": [ {
+                  "osg.Node": {
+                    "UniqueID": 10,
+                    "Name": "GeodeCylinder",
+                    "Children": [ {
+                      "osg.Geometry": {
+                        "UniqueID": 11,
+                        "Name": "Tambor_0",
+                        "PrimitiveSetList": [ {
+                          "DrawElementsUInt": {
+                            "UniqueID": 21,
+                            "Indices": {
+                              "UniqueID": 22,
+                              "Array": { 
+                                "Uint32Array": { 
+                                  "File": "model_file.bin.gz",
+                                  "Size": 101844,
+                                  "Offset": 0,
+                                  "Encoding": "varint"
+                                }
+                              },
+                              "ItemSize": 1,
+                              "Type": "ELEMENT_ARRAY_BUFFER"
+                            },
+                            "Mode": "TRIANGLE_STRIP"
+                          }
+                        },
+                        {
+                          "DrawElementsUInt": {
+                            "UniqueID": 23,
+                            "Indices": {
+                              "UniqueID": 24,
+                              "Array": { 
+                                "Uint32Array": { 
+                                  "File": "model_file.bin.gz",
+                                  "Size": 3120,
+                                  "Offset": 136680,
+                                  "Encoding": "varint"
+                                }
+                              },
+                              "ItemSize": 1,
+                              "Type": "ELEMENT_ARRAY_BUFFER"
+                            },
+                            "Mode": "TRIANGLES"
+                          }
+                        } ],
+                        "StateSet": {
+                          "osg.StateSet": {
+                            "UniqueID": 12,
+                            "Name": "Material",
+                            "AttributeList": [ {
+                              "osg.Material": {
+                                "UniqueID": 14,
+                                "Name": "Material",
+                                "Ambient": [ 0, 0, 0, 1],
+                                "Diffuse": [ 0.64, 0.64, 0.64, 1],
+                                "Emission": [ 0, 0, 0, 1],
+                                "Shininess": 10,
+                                "Specular": [ 0.5, 0.5, 0.5, 1],
+                                "UserDataContainer": {
+                                  "UniqueID": 15,
+                                  "Values": [ {
+                                    "Name": "source",
+                                    "Value": "blender"
+                                  },
+                                  {
+                                    "Name": "NodeTree",
+                                    "Value": "{\"nodes\": {\"Material Output\": {\"type\": \"OUTPUT_MATERIAL\", \"outputs\": [], \"inputs\": [{\"type\": \"SHADER\", \"links\": [{\"from_node\": \"Mix Shader\", \"from_socket\": \"Shader\", \"to_socket\": \"Surface\", \"to_node\": \"Material Output\"}], \"name\": \"Surface\", \"enabled\": true}, {\"type\": \"SHADER\", \"links\": [], \"name\": \"Volume\", \"enabled\": true}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Displacement\", \"enabled\": true, \"default_value\": 0.0}], \"name\": \"Material Output\"}, \"Image Texture.001\": {\"type\": \"TEX_IMAGE\", \"outputs\": [{\"type\": \"RGBA\", \"links\": [{\"from_node\": \"Image Texture.001\", \"from_socket\": \"Color\", \"to_socket\": \"Metallic\", \"to_node\": \"Principled BSDF\"}], \"name\": \"Color\", \"enabled\": true, \"default_value\": [0.0, 0.0, 0.0, 0.0]}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Alpha\", \"enabled\": true, \"default_value\": 0.0}], \"inputs\": [{\"type\": \"VECTOR\", \"links\": [], \"name\": \"Vector\", \"enabled\": true, \"default_value\": [0.0, 0.0, 0.0]}], \"name\": \"Image Texture.001\", \"texture_slot\": 0, \"texture_mapping\": {\"mapping\": \"FLAT\"}, \"image\": {\"use_alpha\": true, \"channels\": 0, \"filepath_raw\": \"//../textures/CLIP/CLIP METALNESS.png\", \"colorspace\": \"sRGB\"}}, \"Image Texture.004\": {\"type\": \"TEX_IMAGE\", \"outputs\": [{\"type\": \"RGBA\", \"links\": [{\"from_node\": \"Image Texture.004\", \"from_socket\": \"Color\", \"to_socket\": \"Color\", \"to_node\": \"Emission\"}], \"name\": \"Color\", \"enabled\": true, \"default_value\": [0.0, 0.0, 0.0, 0.0]}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Alpha\", \"enabled\": true, \"default_value\": 0.0}], \"inputs\": [{\"type\": \"VECTOR\", \"links\": [], \"name\": \"Vector\", \"enabled\": true, \"default_value\": [0.0, 0.0, 0.0]}], \"name\": \"Image Texture.004\", \"texture_slot\": 3, \"texture_mapping\": {\"mapping\": \"FLAT\"}, \"image\": {\"use_alpha\": true, \"channels\": 0, \"filepath_raw\": \"//../textures/CLIP/CLIP EMISION.png\", \"colorspace\": \"sRGB\"}}, \"Emission\": {\"type\": \"EMISSION\", \"outputs\": [{\"type\": \"SHADER\", \"links\": [{\"from_node\": \"Emission\", \"from_socket\": \"Emission\", \"to_socket\": \"Shader\", \"to_node\": \"Mix Shader\"}], \"name\": \"Emission\", \"enabled\": true}], \"inputs\": [{\"type\": \"RGBA\", \"links\": [{\"from_node\": \"Image Texture.004\", \"from_socket\": \"Color\", \"to_socket\": \"Color\", \"to_node\": \"Emission\"}], \"name\": \"Color\", \"enabled\": true, \"default_value\": [0.800000011920929, 0.800000011920929, 0.800000011920929, 1.0]}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Strength\", \"enabled\": true, \"default_value\": 4.0}], \"name\": \"Emission\"}, \"Principled BSDF\": {\"type\": \"CUSTOM\", \"outputs\": [{\"type\": \"SHADER\", \"links\": [{\"from_node\": \"Principled BSDF\", \"from_socket\": \"BSDF\", \"to_socket\": \"Shader\", \"to_node\": \"Mix Shader\"}], \"name\": \"BSDF\", \"enabled\": true}], \"inputs\": [{\"type\": \"RGBA\", \"links\": [{\"from_node\": \"Image Texture\", \"from_socket\": \"Color\", \"to_socket\": \"Base Color\", \"to_node\": \"Principled BSDF\"}], \"name\": \"Base Color\", \"enabled\": true, \"default_value\": [0.800000011920929, 0.800000011920929, 0.800000011920929, 1.0]}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Subsurface\", \"enabled\": true, \"default_value\": 0.0}, {\"type\": \"VECTOR\", \"links\": [], \"name\": \"Subsurface Radius\", \"enabled\": true, \"default_value\": [1.0, 1.0, 1.0]}, {\"type\": \"RGBA\", \"links\": [], \"name\": \"Subsurface Color\", \"enabled\": true, \"default_value\": [0.699999988079071, 0.10000000149011612, 0.10000000149011612, 1.0]}, {\"type\": \"VALUE\", \"links\": [{\"from_node\": \"Image Texture.001\", \"from_socket\": \"Color\", \"to_socket\": \"Metallic\", \"to_node\": \"Principled BSDF\"}], \"name\": \"Metallic\", \"enabled\": true, \"default_value\": 0.0}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Specular\", \"enabled\": true, \"default_value\": 0.5}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Specular Tint\", \"enabled\": true, \"default_value\": 0.0}, {\"type\": \"VALUE\", \"links\": [{\"from_node\": \"Image Texture.003\", \"from_socket\": \"Color\", \"to_socket\": \"Roughness\", \"to_node\": \"Principled BSDF\"}], \"name\": \"Roughness\", \"enabled\": true, \"default_value\": 0.5}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Anisotropic\", \"enabled\": true, \"default_value\": 0.0}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Anisotropic Rotation\", \"enabled\": true, \"default_value\": 0.0}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Sheen\", \"enabled\": true, \"default_value\": 0.0}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Sheen Tint\", \"enabled\": true, \"default_value\": 0.5}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Clearcoat\", \"enabled\": true, \"default_value\": 0.0}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Clearcoat Roughness\", \"enabled\": true, \"default_value\": 0.029999999329447746}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"IOR\", \"enabled\": true, \"default_value\": 1.4500000476837158}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Transmission\", \"enabled\": true, \"default_value\": 0.0}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Transmission Roughness\", \"enabled\": false, \"default_value\": 0.0}, {\"type\": \"VECTOR\", \"links\": [{\"from_node\": \"Normal Map\", \"from_socket\": \"Normal\", \"to_socket\": \"Normal\", \"to_node\": \"Principled BSDF\"}], \"name\": \"Normal\", \"enabled\": true, \"default_value\": [0.0, 0.0, 0.0]}, {\"type\": \"VECTOR\", \"links\": [], \"name\": \"Clearcoat Normal\", \"enabled\": true, \"default_value\": [0.0, 0.0, 0.0]}, {\"type\": \"VECTOR\", \"links\": [], \"name\": \"Tangent\", \"enabled\": true, \"default_value\": [0.0, 0.0, 0.0]}], \"name\": \"Principled BSDF\"}, \"Normal Map\": {\"type\": \"NORMAL_MAP\", \"outputs\": [{\"type\": \"VECTOR\", \"links\": [{\"from_node\": \"Normal Map\", \"from_socket\": \"Normal\", \"to_socket\": \"Normal\", \"to_node\": \"Principled BSDF\"}], \"name\": \"Normal\", \"enabled\": true, \"default_value\": [0.0, 0.0, 0.0]}], \"inputs\": [{\"type\": \"VALUE\", \"links\": [], \"name\": \"Strength\", \"enabled\": true, \"default_value\": 1.0}, {\"type\": \"RGBA\", \"links\": [{\"from_node\": \"Image Texture.002\", \"from_socket\": \"Color\", \"to_socket\": \"Color\", \"to_node\": \"Normal Map\"}], \"name\": \"Color\", \"enabled\": true, \"default_value\": [0.5, 0.5, 1.0, 1.0]}], \"name\": \"Normal Map\"}, \"Image Texture\": {\"type\": \"TEX_IMAGE\", \"outputs\": [{\"type\": \"RGBA\", \"links\": [{\"from_node\": \"Image Texture\", \"from_socket\": \"Color\", \"to_socket\": \"Base Color\", \"to_node\": \"Principled BSDF\"}], \"name\": \"Color\", \"enabled\": true, \"default_value\": [0.0, 0.0, 0.0, 0.0]}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Alpha\", \"enabled\": true, \"default_value\": 0.0}], \"inputs\": [{\"type\": \"VECTOR\", \"links\": [], \"name\": \"Vector\", \"enabled\": true, \"default_value\": [0.0, 0.0, 0.0]}], \"name\": \"Image Texture\", \"texture_slot\": 2, \"texture_mapping\": {\"mapping\": \"FLAT\"}, \"image\": {\"use_alpha\": true, \"channels\": 0, \"filepath_raw\": \"//../textures/CLIP/CLIP ALBEDO.png\", \"colorspace\": \"sRGB\"}}, \"Mix Shader\": {\"type\": \"MIX_SHADER\", \"outputs\": [{\"type\": \"SHADER\", \"links\": [{\"from_node\": \"Mix Shader\", \"from_socket\": \"Shader\", \"to_socket\": \"Surface\", \"to_node\": \"Material Output\"}], \"name\": \"Shader\", \"enabled\": true}], \"inputs\": [{\"type\": \"VALUE\", \"links\": [], \"name\": \"Fac\", \"enabled\": true, \"default_value\": 0.5}, {\"type\": \"SHADER\", \"links\": [{\"from_node\": \"Principled BSDF\", \"from_socket\": \"BSDF\", \"to_socket\": \"Shader\", \"to_node\": \"Mix Shader\"}], \"name\": \"Shader\", \"enabled\": true}, {\"type\": \"SHADER\", \"links\": [{\"from_node\": \"Emission\", \"from_socket\": \"Emission\", \"to_socket\": \"Shader\", \"to_node\": \"Mix Shader\"}], \"name\": \"Shader\", \"enabled\": true}], \"name\": \"Mix Shader\"}, \"Image Texture.002\": {\"type\": \"TEX_IMAGE\", \"outputs\": [{\"type\": \"RGBA\", \"links\": [{\"from_node\": \"Image Texture.002\", \"from_socket\": \"Color\", \"to_socket\": \"Color\", \"to_node\": \"Normal Map\"}], \"name\": \"Color\", \"enabled\": true, \"default_value\": [0.0, 0.0, 0.0, 0.0]}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Alpha\", \"enabled\": true, \"default_value\": 0.0}], \"inputs\": [{\"type\": \"VECTOR\", \"links\": [], \"name\": \"Vector\", \"enabled\": true, \"default_value\": [0.0, 0.0, 0.0]}], \"name\": \"Image Texture.002\", \"texture_slot\": 4, \"texture_mapping\": {\"mapping\": \"FLAT\"}, \"image\": {\"use_alpha\": true, \"channels\": 0, \"filepath_raw\": \"//../textures/CLIP/CLIP NORMAL.png\", \"colorspace\": \"sRGB\"}}, \"Image Texture.003\": {\"type\": \"TEX_IMAGE\", \"outputs\": [{\"type\": \"RGBA\", \"links\": [{\"from_node\": \"Image Texture.003\", \"from_socket\": \"Color\", \"to_socket\": \"Roughness\", \"to_node\": \"Principled BSDF\"}], \"name\": \"Color\", \"enabled\": true, \"default_value\": [0.0, 0.0, 0.0, 0.0]}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Alpha\", \"enabled\": true, \"default_value\": 0.0}], \"inputs\": [{\"type\": \"VECTOR\", \"links\": [], \"name\": \"Vector\", \"enabled\": true, \"default_value\": [0.0, 0.0, 0.0]}], \"name\": \"Image Texture.003\", \"texture_slot\": 1, \"texture_mapping\": {\"mapping\": \"FLAT\"}, \"image\": {\"use_alpha\": true, \"channels\": 0, \"filepath_raw\": \"//../textures/CLIP/CLIP ROUGHNESS.png\", \"colorspace\": \"sRGB\"}}}}"
+                                  } ]
+                                }
+                              }
+                            } ],
+                            "UserDataContainer": {
+                              "UniqueID": 13,
+                              "Values": [ {
+                                "Name": "source",
+                                "Value": "blender"
+                              },
+                              {
+                                "Name": "UniqueID",
+                                "Value": "1"
+                              } ]
+                            }
+                          }
+                        },
+                        "UserDataContainer": {
+                          "UniqueID": 16,
+                          "Values": [ {
+                            "Name": "attributes",
+                            "Value": "55"
+                          },
+                          {
+                            "Name": "vertex_bits",
+                            "Value": "16"
+                          },
+                          {
+                            "Name": "vertex_mode",
+                            "Value": "3"
+                          },
+                          {
+                            "Name": "uv_0_bits",
+                            "Value": "14"
+                          },
+                          {
+                            "Name": "uv_0_mode",
+                            "Value": "3"
+                          },
+                          {
+                            "Name": "epsilon",
+                            "Value": "0.25"
+                          },
+                          {
+                            "Name": "nphi",
+                            "Value": "720"
+                          },
+                          {
+                            "Name": "triangle_mode",
+                            "Value": "7"
+                          },
+                          {
+                            "Name": "vtx_bbl_x",
+                            "Value": "-9.78947"
+                          },
+                          {
+                            "Name": "vtx_bbl_y",
+                            "Value": "-14.3526"
+                          },
+                          {
+                            "Name": "vtx_bbl_z",
+                            "Value": "-9.78942"
+                          },
+                          {
+                            "Name": "vtx_h_x",
+                            "Value": "0.000597517"
+                          },
+                          {
+                            "Name": "vtx_h_y",
+                            "Value": "0.000866648"
+                          },
+                          {
+                            "Name": "vtx_h_z",
+                            "Value": "0.000597518"
+                          },
+                          {
+                            "Name": "uv_0_bbl_x",
+                            "Value": "0"
+                          },
+                          {
+                            "Name": "uv_0_bbl_y",
+                            "Value": "0.50033"
+                          },
+                          {
+                            "Name": "uv_0_h_x",
+                            "Value": "0.00012205"
+                          },
+                          {
+                            "Name": "uv_0_h_y",
+                            "Value": "5.08314e-05"
+                          } ]
+                        },
+                        "VertexAttributeList": {
+                          "Normal": {
+                            "UniqueID": 18,
+                            "Array": { 
+                              "Uint32Array": { 
+                                "File": "model_file.bin.gz",
+                                "Size": 62524,
+                                "Offset": 141184,
+                                "Encoding": "varint"
+                              }
+                            },
+                            "ItemSize": 2,
+                            "Type": "ARRAY_BUFFER"
+                          },
+                          "Tangent": {
+                            "UniqueID": 20,
+                            "Array": { 
+                              "Uint32Array": { 
+                                "File": "model_file.bin.gz",
+                                "Size": 62524,
+                                "Offset": 369300,
+                                "Encoding": "varint"
+                              }
+                            },
+                            "ItemSize": 2,
+                            "Type": "ARRAY_BUFFER"
+                          },
+                          "TexCoord0": {
+                            "UniqueID": 19,
+                            "Array": { 
+                              "Int32Array": { 
+                                "File": "model_file.bin.gz",
+                                "Size": 62524,
+                                "Offset": 589060,
+                                "Encoding": "varint"
+                              }
+                            },
+                            "ItemSize": 2,
+                            "Type": "ARRAY_BUFFER"
+                          },
+                          "Vertex": {
+                            "UniqueID": 17,
+                            "Array": { 
+                              "Int32Array": { 
+                                "File": "model_file.bin.gz",
+                                "Size": 62524,
+                                "Offset": 727348,
+                                "Encoding": "varint"
+                              }
+                            },
+                            "ItemSize": 3,
+                            "Type": "ARRAY_BUFFER"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "osg.Geometry": {
+                        "UniqueID": 25,
+                        "Name": "Tambor_0",
+                        "PrimitiveSetList": [ {
+                          "DrawElementsUShort": {
+                            "UniqueID": 27,
+                            "Indices": {
+                              "UniqueID": 28,
+                              "Array": { 
+                                "Uint16Array": { 
+                                  "File": "model_file_wireframe.bin.gz",
+                                  "Size": 243348,
+                                  "Offset": 0,
+                                  "Encoding": "varint"
+                                }
+                              },
+                              "ItemSize": 1,
+                              "Type": "ELEMENT_ARRAY_BUFFER"
+                            },
+                            "Mode": "LINES"
+                          }
+                        } ],
+                        "UserDataContainer": {
+                          "UniqueID": 26,
+                          "Values": [ {
+                            "Name": "wireframe",
+                            "Value": "1"
+                          },
+                          {
+                            "Name": "attributes",
+                            "Value": "1"
+                          } ]
+                        },
+                        "VertexAttributeList": {
+                          "Vertex": {
+                            "UniqueID": 17
+                          }
+                        }
+                      }
+                    } ]
+                  }
+                } ],
+                "Matrix": [ 1, 0, 0, 0, -0, 1, -0, 0, 0, 0, 1, 0, 0, -0, 0, 1 ]
+              }
+            } ],
+            "Matrix": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7e-05, -19.3817, 60.8458, 1 ],
+            "UpdateCallbacks": [ {
+              "osgAnimation.UpdateMatrixTransform": {
+                "UniqueID": 8,
+                "Name": "Empty",
+                "StackedTransforms": [ {
+                  "osgAnimation.StackedTranslate": {
+                    "Name": "translate",
+                    "Translate": [ 7e-05, -19.3817, 60.8458]
+                  }
+                },
+                {
+                  "osgAnimation.StackedQuaternion": {
+                    "Name": "quaternion",
+                    "Quaternion": [ 0, 0, 0, 1]
+                  }
+                },
+                {
+                  "osgAnimation.StackedScale": {
+                    "Name": "scale",
+                    "Scale": [ 1, 1, 1]
+                  }
+                } ]
+              }
+            } ]
+          }
+        },
+        {
+          "osg.MatrixTransform": {
+            "UniqueID": 29,
+            "Name": "Plane",
+            "Children": [ {
+              "osg.Node": {
+                "UniqueID": 30,
+                "Name": "GeodePlane",
+                "Children": [ {
+                  "osg.Geometry": {
+                    "UniqueID": 31,
+                    "Name": "Plane_0",
+                    "PrimitiveSetList": [ {
+                      "DrawElementsUByte": {
+                        "UniqueID": 41,
+                        "Indices": {
+                          "UniqueID": 42,
+                          "Array": { 
+                            "Uint8Array": { 
+                              "File": "model_file.bin.gz",
+                              "Size": 4,
+                              "Offset": 955304
+                            }
+                          },
+                          "ItemSize": 1,
+                          "Type": "ELEMENT_ARRAY_BUFFER"
+                        },
+                        "Mode": "TRIANGLE_STRIP"
+                      }
+                    } ],
+                    "StateSet": {
+                      "osg.StateSet": {
+                        "UniqueID": 32,
+                        "Name": "red dot",
+                        "AttributeList": [ {
+                          "osg.Material": {
+                            "UniqueID": 34,
+                            "Name": "red dot",
+                            "Ambient": [ 0, 0, 0, 1],
+                            "Diffuse": [ 0.64, 0.64, 0.64, 1],
+                            "Emission": [ 0, 0, 0, 1],
+                            "Shininess": 10,
+                            "Specular": [ 0.5, 0.5, 0.5, 1],
+                            "UserDataContainer": {
+                              "UniqueID": 35,
+                              "Values": [ {
+                                "Name": "source",
+                                "Value": "blender"
+                              },
+                              {
+                                "Name": "NodeTree",
+                                "Value": "{\"nodes\": {\"Material Output\": {\"type\": \"OUTPUT_MATERIAL\", \"outputs\": [], \"inputs\": [{\"type\": \"SHADER\", \"links\": [{\"from_node\": \"Mix Shader.001\", \"from_socket\": \"Shader\", \"to_socket\": \"Surface\", \"to_node\": \"Material Output\"}], \"name\": \"Surface\", \"enabled\": true}, {\"type\": \"SHADER\", \"links\": [], \"name\": \"Volume\", \"enabled\": true}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Displacement\", \"enabled\": true, \"default_value\": 0.0}], \"name\": \"Material Output\"}, \"Emission\": {\"type\": \"EMISSION\", \"outputs\": [{\"type\": \"SHADER\", \"links\": [{\"from_node\": \"Emission\", \"from_socket\": \"Emission\", \"to_socket\": \"Shader\", \"to_node\": \"Mix Shader\"}], \"name\": \"Emission\", \"enabled\": true}], \"inputs\": [{\"type\": \"RGBA\", \"links\": [{\"from_node\": \"Image Texture.001\", \"from_socket\": \"Color\", \"to_socket\": \"Color\", \"to_node\": \"Emission\"}], \"name\": \"Color\", \"enabled\": true, \"default_value\": [0.800000011920929, 0.800000011920929, 0.800000011920929, 1.0]}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Strength\", \"enabled\": true, \"default_value\": 1.0}], \"name\": \"Emission\"}, \"Mix Shader.001\": {\"type\": \"MIX_SHADER\", \"outputs\": [{\"type\": \"SHADER\", \"links\": [{\"from_node\": \"Mix Shader.001\", \"from_socket\": \"Shader\", \"to_socket\": \"Surface\", \"to_node\": \"Material Output\"}], \"name\": \"Shader\", \"enabled\": true}], \"inputs\": [{\"type\": \"VALUE\", \"links\": [{\"from_node\": \"Image Texture\", \"from_socket\": \"Alpha\", \"to_socket\": \"Fac\", \"to_node\": \"Mix Shader.001\"}], \"name\": \"Fac\", \"enabled\": true, \"default_value\": 0.5}, {\"type\": \"SHADER\", \"links\": [{\"from_node\": \"Transparent BSDF\", \"from_socket\": \"BSDF\", \"to_socket\": \"Shader\", \"to_node\": \"Mix Shader.001\"}], \"name\": \"Shader\", \"enabled\": true}, {\"type\": \"SHADER\", \"links\": [{\"from_node\": \"Mix Shader\", \"from_socket\": \"Shader\", \"to_socket\": \"Shader\", \"to_node\": \"Mix Shader.001\"}], \"name\": \"Shader\", \"enabled\": true}], \"name\": \"Mix Shader.001\"}, \"Transparent BSDF\": {\"type\": \"BSDF_TRANSPARENT\", \"outputs\": [{\"type\": \"SHADER\", \"links\": [{\"from_node\": \"Transparent BSDF\", \"from_socket\": \"BSDF\", \"to_socket\": \"Shader\", \"to_node\": \"Mix Shader.001\"}], \"name\": \"BSDF\", \"enabled\": true}], \"inputs\": [{\"type\": \"RGBA\", \"links\": [], \"name\": \"Color\", \"enabled\": true, \"default_value\": [1.0, 1.0, 1.0, 1.0]}], \"name\": \"Transparent BSDF\"}, \"Image Texture.001\": {\"type\": \"TEX_IMAGE\", \"outputs\": [{\"type\": \"RGBA\", \"links\": [{\"from_node\": \"Image Texture.001\", \"from_socket\": \"Color\", \"to_socket\": \"Color\", \"to_node\": \"Emission\"}], \"name\": \"Color\", \"enabled\": true, \"default_value\": [0.0, 0.0, 0.0, 0.0]}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Alpha\", \"enabled\": true, \"default_value\": 0.0}], \"inputs\": [{\"type\": \"VECTOR\", \"links\": [], \"name\": \"Vector\", \"enabled\": true, \"default_value\": [0.0, 0.0, 0.0]}], \"name\": \"Image Texture.001\", \"texture_slot\": 1, \"texture_mapping\": {\"mapping\": \"FLAT\"}, \"image\": {\"use_alpha\": true, \"channels\": 0, \"filepath_raw\": \"//../texturing/textures/red dot/red dot emision.png\", \"colorspace\": \"sRGB\"}}, \"Image Texture\": {\"type\": \"TEX_IMAGE\", \"outputs\": [{\"type\": \"RGBA\", \"links\": [{\"from_node\": \"Image Texture\", \"from_socket\": \"Color\", \"to_socket\": \"Base Color\", \"to_node\": \"Principled BSDF\"}], \"name\": \"Color\", \"enabled\": true, \"default_value\": [0.0, 0.0, 0.0, 0.0]}, {\"type\": \"VALUE\", \"links\": [{\"from_node\": \"Image Texture\", \"from_socket\": \"Alpha\", \"to_socket\": \"Fac\", \"to_node\": \"Mix Shader.001\"}], \"name\": \"Alpha\", \"enabled\": true, \"default_value\": 0.0}], \"inputs\": [{\"type\": \"VECTOR\", \"links\": [], \"name\": \"Vector\", \"enabled\": true, \"default_value\": [0.0, 0.0, 0.0]}], \"name\": \"Image Texture\", \"texture_slot\": 0, \"texture_mapping\": {\"mapping\": \"FLAT\"}, \"image\": {\"use_alpha\": true, \"channels\": 0, \"filepath_raw\": \"//../texturing/textures/red dot/gun process TEXTURINGsafe.png\", \"colorspace\": \"sRGB\"}}, \"Mix Shader\": {\"type\": \"MIX_SHADER\", \"outputs\": [{\"type\": \"SHADER\", \"links\": [{\"from_node\": \"Mix Shader\", \"from_socket\": \"Shader\", \"to_socket\": \"Shader\", \"to_node\": \"Mix Shader.001\"}], \"name\": \"Shader\", \"enabled\": true}], \"inputs\": [{\"type\": \"VALUE\", \"links\": [], \"name\": \"Fac\", \"enabled\": true, \"default_value\": 0.5090909600257874}, {\"type\": \"SHADER\", \"links\": [{\"from_node\": \"Emission\", \"from_socket\": \"Emission\", \"to_socket\": \"Shader\", \"to_node\": \"Mix Shader\"}], \"name\": \"Shader\", \"enabled\": true}, {\"type\": \"SHADER\", \"links\": [{\"from_node\": \"Principled BSDF\", \"from_socket\": \"BSDF\", \"to_socket\": \"Shader\", \"to_node\": \"Mix Shader\"}], \"name\": \"Shader\", \"enabled\": true}], \"name\": \"Mix Shader\"}, \"Principled BSDF\": {\"type\": \"CUSTOM\", \"outputs\": [{\"type\": \"SHADER\", \"links\": [{\"from_node\": \"Principled BSDF\", \"from_socket\": \"BSDF\", \"to_socket\": \"Shader\", \"to_node\": \"Mix Shader\"}], \"name\": \"BSDF\", \"enabled\": true}], \"inputs\": [{\"type\": \"RGBA\", \"links\": [{\"from_node\": \"Image Texture\", \"from_socket\": \"Color\", \"to_socket\": \"Base Color\", \"to_node\": \"Principled BSDF\"}], \"name\": \"Base Color\", \"enabled\": true, \"default_value\": [0.800000011920929, 0.800000011920929, 0.800000011920929, 1.0]}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Subsurface\", \"enabled\": true, \"default_value\": 0.0}, {\"type\": \"VECTOR\", \"links\": [], \"name\": \"Subsurface Radius\", \"enabled\": true, \"default_value\": [1.0, 1.0, 1.0]}, {\"type\": \"RGBA\", \"links\": [], \"name\": \"Subsurface Color\", \"enabled\": true, \"default_value\": [0.699999988079071, 0.10000000149011612, 0.10000000149011612, 1.0]}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Metallic\", \"enabled\": true, \"default_value\": 0.0}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Specular\", \"enabled\": true, \"default_value\": 0.5}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Specular Tint\", \"enabled\": true, \"default_value\": 0.0}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Roughness\", \"enabled\": true, \"default_value\": 0.5}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Anisotropic\", \"enabled\": true, \"default_value\": 0.0}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Anisotropic Rotation\", \"enabled\": true, \"default_value\": 0.0}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Sheen\", \"enabled\": true, \"default_value\": 0.0}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Sheen Tint\", \"enabled\": true, \"default_value\": 0.5}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Clearcoat\", \"enabled\": true, \"default_value\": 0.0}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Clearcoat Roughness\", \"enabled\": true, \"default_value\": 0.029999999329447746}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"IOR\", \"enabled\": true, \"default_value\": 1.4500000476837158}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Transmission\", \"enabled\": true, \"default_value\": 0.0}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Transmission Roughness\", \"enabled\": false, \"default_value\": 0.0}, {\"type\": \"VECTOR\", \"links\": [], \"name\": \"Normal\", \"enabled\": true, \"default_value\": [0.0, 0.0, 0.0]}, {\"type\": \"VECTOR\", \"links\": [], \"name\": \"Clearcoat Normal\", \"enabled\": true, \"default_value\": [0.0, 0.0, 0.0]}, {\"type\": \"VECTOR\", \"links\": [], \"name\": \"Tangent\", \"enabled\": true, \"default_value\": [0.0, 0.0, 0.0]}], \"name\": \"Principled BSDF\"}}}"
+                              } ]
+                            }
+                          }
+                        } ],
+                        "UserDataContainer": {
+                          "UniqueID": 33,
+                          "Values": [ {
+                            "Name": "source",
+                            "Value": "blender"
+                          },
+                          {
+                            "Name": "UniqueID",
+                            "Value": "2"
+                          } ]
+                        }
+                      }
+                    },
+                    "UserDataContainer": {
+                      "UniqueID": 36,
+                      "Values": [ {
+                        "Name": "attributes",
+                        "Value": "55"
+                      },
+                      {
+                        "Name": "vertex_bits",
+                        "Value": "8"
+                      },
+                      {
+                        "Name": "vertex_mode",
+                        "Value": "3"
+                      },
+                      {
+                        "Name": "uv_0_bits",
+                        "Value": "8"
+                      },
+                      {
+                        "Name": "uv_0_mode",
+                        "Value": "3"
+                      },
+                      {
+                        "Name": "epsilon",
+                        "Value": "0.25"
+                      },
+                      {
+                        "Name": "nphi",
+                        "Value": "720"
+                      },
+                      {
+                        "Name": "triangle_mode",
+                        "Value": "7"
+                      },
+                      {
+                        "Name": "vtx_bbl_x",
+                        "Value": "-100"
+                      },
+                      {
+                        "Name": "vtx_bbl_y",
+                        "Value": "-100"
+                      },
+                      {
+                        "Name": "vtx_bbl_z",
+                        "Value": "0"
+                      },
+                      {
+                        "Name": "vtx_h_x",
+                        "Value": "1.5748"
+                      },
+                      {
+                        "Name": "vtx_h_y",
+                        "Value": "1.5748"
+                      },
+                      {
+                        "Name": "vtx_h_z",
+                        "Value": "7.87402e-08"
+                      },
+                      {
+                        "Name": "uv_0_bbl_x",
+                        "Value": "0.35514"
+                      },
+                      {
+                        "Name": "uv_0_bbl_y",
+                        "Value": "0.35514"
+                      },
+                      {
+                        "Name": "uv_0_h_x",
+                        "Value": "0.00228126"
+                      },
+                      {
+                        "Name": "uv_0_h_y",
+                        "Value": "0.00228126"
+                      } ]
+                    },
+                    "VertexAttributeList": {
+                      "Normal": {
+                        "UniqueID": 38,
+                        "Array": { 
+                          "Uint32Array": { 
+                            "File": "model_file.bin.gz",
+                            "Size": 4,
+                            "Offset": 955308,
+                            "Encoding": "varint"
+                          }
+                        },
+                        "ItemSize": 2,
+                        "Type": "ARRAY_BUFFER"
+                      },
+                      "Tangent": {
+                        "UniqueID": 40,
+                        "Array": { 
+                          "Uint32Array": { 
+                            "File": "model_file.bin.gz",
+                            "Size": 4,
+                            "Offset": 955316,
+                            "Encoding": "varint"
+                          }
+                        },
+                        "ItemSize": 2,
+                        "Type": "ARRAY_BUFFER"
+                      },
+                      "TexCoord0": {
+                        "UniqueID": 39,
+                        "Array": { 
+                          "Int32Array": { 
+                            "File": "model_file.bin.gz",
+                            "Size": 4,
+                            "Offset": 955328,
+                            "Encoding": "varint"
+                          }
+                        },
+                        "ItemSize": 2,
+                        "Type": "ARRAY_BUFFER"
+                      },
+                      "Vertex": {
+                        "UniqueID": 37,
+                        "Array": { 
+                          "Int32Array": { 
+                            "File": "model_file.bin.gz",
+                            "Size": 4,
+                            "Offset": 955340,
+                            "Encoding": "varint"
+                          }
+                        },
+                        "ItemSize": 3,
+                        "Type": "ARRAY_BUFFER"
+                      }
+                    }
+                  }
+                },
+                {
+                  "osg.Geometry": {
+                    "UniqueID": 43,
+                    "Name": "Plane_0",
+                    "PrimitiveSetList": [ {
+                      "DrawElementsUByte": {
+                        "UniqueID": 45,
+                        "Indices": {
+                          "UniqueID": 46,
+                          "Array": { 
+                            "Uint8Array": { 
+                              "File": "model_file_wireframe.bin.gz",
+                              "Size": 8,
+                              "Offset": 666280
+                            }
+                          },
+                          "ItemSize": 1,
+                          "Type": "ELEMENT_ARRAY_BUFFER"
+                        },
+                        "Mode": "LINES"
+                      }
+                    } ],
+                    "UserDataContainer": {
+                      "UniqueID": 44,
+                      "Values": [ {
+                        "Name": "wireframe",
+                        "Value": "1"
+                      },
+                      {
+                        "Name": "attributes",
+                        "Value": "1"
+                      } ]
+                    },
+                    "VertexAttributeList": {
+                      "Vertex": {
+                        "UniqueID": 37
+                      }
+                    }
+                  }
+                } ]
+              }
+            } ],
+            "Matrix": [ 0.0241, 0, 0, 0, 0, -0, 0.0241, 0, 0, -0.0241, -0, 0, 0, -2.25055, 71.7766, 1 ]
+          }
+        },
+        {
+          "osg.MatrixTransform": {
+            "UniqueID": 47,
+            "Name": "Cube",
+            "Children": [ {
+              "osg.Node": {
+                "UniqueID": 48,
+                "Name": "GeodeCube.002",
+                "Children": [ {
+                  "osg.Geometry": {
+                    "UniqueID": 49,
+                    "Name": "Cube_0",
+                    "PrimitiveSetList": [ {
+                      "DrawElementsUInt": {
+                        "UniqueID": 59,
+                        "Indices": {
+                          "UniqueID": 60,
+                          "Array": { 
+                            "Uint32Array": { 
+                              "File": "model_file.bin.gz",
+                              "Size": 33456,
+                              "Offset": 955356,
+                              "Encoding": "varint"
+                            }
+                          },
+                          "ItemSize": 1,
+                          "Type": "ELEMENT_ARRAY_BUFFER"
+                        },
+                        "Mode": "TRIANGLE_STRIP"
+                      }
+                    },
+                    {
+                      "DrawElementsUShort": {
+                        "UniqueID": 61,
+                        "Indices": {
+                          "UniqueID": 62,
+                          "Array": { 
+                            "Uint16Array": { 
+                              "File": "model_file.bin.gz",
+                              "Size": 6846,
+                              "Offset": 998840,
+                              "Encoding": "varint"
+                            }
+                          },
+                          "ItemSize": 1,
+                          "Type": "ELEMENT_ARRAY_BUFFER"
+                        },
+                        "Mode": "TRIANGLES"
+                      }
+                    } ],
+                    "StateSet": {
+                      "osg.StateSet": {
+                        "UniqueID": 50,
+                        "Name": "the material",
+                        "AttributeList": [ {
+                          "osg.Material": {
+                            "UniqueID": 52,
+                            "Name": "the material",
+                            "Ambient": [ 0, 0, 0, 1],
+                            "Diffuse": [ 0.64, 0.64, 0.64, 1],
+                            "Emission": [ 0, 0, 0, 1],
+                            "Shininess": 10,
+                            "Specular": [ 0.5, 0.5, 0.5, 1],
+                            "UserDataContainer": {
+                              "UniqueID": 53,
+                              "Values": [ {
+                                "Name": "source",
+                                "Value": "blender"
+                              },
+                              {
+                                "Name": "NodeTree",
+                                "Value": "{\"nodes\": {\"Material Output\": {\"type\": \"OUTPUT_MATERIAL\", \"outputs\": [], \"inputs\": [{\"type\": \"SHADER\", \"links\": [{\"from_node\": \"Principled BSDF\", \"from_socket\": \"BSDF\", \"to_socket\": \"Surface\", \"to_node\": \"Material Output\"}], \"name\": \"Surface\", \"enabled\": true}, {\"type\": \"SHADER\", \"links\": [], \"name\": \"Volume\", \"enabled\": true}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Displacement\", \"enabled\": true, \"default_value\": 0.0}], \"name\": \"Material Output\"}, \"Normal Map\": {\"type\": \"NORMAL_MAP\", \"outputs\": [{\"type\": \"VECTOR\", \"links\": [{\"from_node\": \"Normal Map\", \"from_socket\": \"Normal\", \"to_socket\": \"Normal\", \"to_node\": \"Principled BSDF\"}], \"name\": \"Normal\", \"enabled\": true, \"default_value\": [0.0, 0.0, 0.0]}], \"inputs\": [{\"type\": \"VALUE\", \"links\": [], \"name\": \"Strength\", \"enabled\": true, \"default_value\": 1.0}, {\"type\": \"RGBA\", \"links\": [{\"from_node\": \"Image Texture.003\", \"from_socket\": \"Color\", \"to_socket\": \"Color\", \"to_node\": \"Normal Map\"}], \"name\": \"Color\", \"enabled\": true, \"default_value\": [0.5, 0.5, 1.0, 1.0]}], \"name\": \"Normal Map\"}, \"Principled BSDF\": {\"type\": \"CUSTOM\", \"outputs\": [{\"type\": \"SHADER\", \"links\": [{\"from_node\": \"Principled BSDF\", \"from_socket\": \"BSDF\", \"to_socket\": \"Surface\", \"to_node\": \"Material Output\"}], \"name\": \"BSDF\", \"enabled\": true}], \"inputs\": [{\"type\": \"RGBA\", \"links\": [{\"from_node\": \"Image Texture\", \"from_socket\": \"Color\", \"to_socket\": \"Base Color\", \"to_node\": \"Principled BSDF\"}], \"name\": \"Base Color\", \"enabled\": true, \"default_value\": [0.800000011920929, 0.800000011920929, 0.800000011920929, 1.0]}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Subsurface\", \"enabled\": true, \"default_value\": 0.0}, {\"type\": \"VECTOR\", \"links\": [], \"name\": \"Subsurface Radius\", \"enabled\": true, \"default_value\": [1.0, 1.0, 1.0]}, {\"type\": \"RGBA\", \"links\": [], \"name\": \"Subsurface Color\", \"enabled\": true, \"default_value\": [0.699999988079071, 0.10000000149011612, 0.10000000149011612, 1.0]}, {\"type\": \"VALUE\", \"links\": [{\"from_node\": \"Image Texture.001\", \"from_socket\": \"Color\", \"to_socket\": \"Metallic\", \"to_node\": \"Principled BSDF\"}], \"name\": \"Metallic\", \"enabled\": true, \"default_value\": 0.0}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Specular\", \"enabled\": true, \"default_value\": 0.5}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Specular Tint\", \"enabled\": true, \"default_value\": 0.0}, {\"type\": \"VALUE\", \"links\": [{\"from_node\": \"Image Texture.002\", \"from_socket\": \"Color\", \"to_socket\": \"Roughness\", \"to_node\": \"Principled BSDF\"}], \"name\": \"Roughness\", \"enabled\": true, \"default_value\": 0.5}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Anisotropic\", \"enabled\": true, \"default_value\": 0.0}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Anisotropic Rotation\", \"enabled\": true, \"default_value\": 0.0}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Sheen\", \"enabled\": true, \"default_value\": 0.0}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Sheen Tint\", \"enabled\": true, \"default_value\": 0.5}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Clearcoat\", \"enabled\": true, \"default_value\": 0.0}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Clearcoat Roughness\", \"enabled\": true, \"default_value\": 0.029999999329447746}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"IOR\", \"enabled\": true, \"default_value\": 1.4500000476837158}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Transmission\", \"enabled\": true, \"default_value\": 0.0}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Transmission Roughness\", \"enabled\": false, \"default_value\": 0.0}, {\"type\": \"VECTOR\", \"links\": [{\"from_node\": \"Normal Map\", \"from_socket\": \"Normal\", \"to_socket\": \"Normal\", \"to_node\": \"Principled BSDF\"}], \"name\": \"Normal\", \"enabled\": true, \"default_value\": [0.0, 0.0, 0.0]}, {\"type\": \"VECTOR\", \"links\": [], \"name\": \"Clearcoat Normal\", \"enabled\": true, \"default_value\": [0.0, 0.0, 0.0]}, {\"type\": \"VECTOR\", \"links\": [], \"name\": \"Tangent\", \"enabled\": true, \"default_value\": [0.0, 0.0, 0.0]}], \"name\": \"Principled BSDF\"}, \"Image Texture.001\": {\"type\": \"TEX_IMAGE\", \"outputs\": [{\"type\": \"RGBA\", \"links\": [{\"from_node\": \"Image Texture.001\", \"from_socket\": \"Color\", \"to_socket\": \"Metallic\", \"to_node\": \"Principled BSDF\"}], \"name\": \"Color\", \"enabled\": true, \"default_value\": [0.0, 0.0, 0.0, 0.0]}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Alpha\", \"enabled\": true, \"default_value\": 0.0}], \"inputs\": [{\"type\": \"VECTOR\", \"links\": [], \"name\": \"Vector\", \"enabled\": true, \"default_value\": [0.0, 0.0, 0.0]}], \"name\": \"Image Texture.001\", \"texture_slot\": 1, \"texture_mapping\": {\"mapping\": \"FLAT\"}, \"image\": {\"use_alpha\": true, \"channels\": 0, \"filepath_raw\": \"//../textures/OBJECT 1/BODY METALNESS.png\", \"colorspace\": \"sRGB\"}}, \"Image Texture\": {\"type\": \"TEX_IMAGE\", \"outputs\": [{\"type\": \"RGBA\", \"links\": [{\"from_node\": \"Image Texture\", \"from_socket\": \"Color\", \"to_socket\": \"Base Color\", \"to_node\": \"Principled BSDF\"}], \"name\": \"Color\", \"enabled\": true, \"default_value\": [0.0, 0.0, 0.0, 0.0]}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Alpha\", \"enabled\": true, \"default_value\": 0.0}], \"inputs\": [{\"type\": \"VECTOR\", \"links\": [], \"name\": \"Vector\", \"enabled\": true, \"default_value\": [0.0, 0.0, 0.0]}], \"name\": \"Image Texture\", \"texture_slot\": 0, \"texture_mapping\": {\"mapping\": \"FLAT\"}, \"image\": {\"use_alpha\": true, \"channels\": 0, \"filepath_raw\": \"//../textures/OBJECT 1/JPEGS/BODY ALBEDO.jpg\", \"colorspace\": \"sRGB\"}}, \"Image Texture.002\": {\"type\": \"TEX_IMAGE\", \"outputs\": [{\"type\": \"RGBA\", \"links\": [{\"from_node\": \"Image Texture.002\", \"from_socket\": \"Color\", \"to_socket\": \"Roughness\", \"to_node\": \"Principled BSDF\"}], \"name\": \"Color\", \"enabled\": true, \"default_value\": [0.0, 0.0, 0.0, 0.0]}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Alpha\", \"enabled\": true, \"default_value\": 0.0}], \"inputs\": [{\"type\": \"VECTOR\", \"links\": [], \"name\": \"Vector\", \"enabled\": true, \"default_value\": [0.0, 0.0, 0.0]}], \"name\": \"Image Texture.002\", \"texture_slot\": 2, \"texture_mapping\": {\"mapping\": \"FLAT\"}, \"image\": {\"use_alpha\": true, \"channels\": 0, \"filepath_raw\": \"//../textures/OBJECT 1/JPEGS/BODY ROUGHNESS.jpg\", \"colorspace\": \"sRGB\"}}, \"Image Texture.003\": {\"type\": \"TEX_IMAGE\", \"outputs\": [{\"type\": \"RGBA\", \"links\": [{\"from_node\": \"Image Texture.003\", \"from_socket\": \"Color\", \"to_socket\": \"Color\", \"to_node\": \"Normal Map\"}], \"name\": \"Color\", \"enabled\": true, \"default_value\": [0.0, 0.0, 0.0, 0.0]}, {\"type\": \"VALUE\", \"links\": [], \"name\": \"Alpha\", \"enabled\": true, \"default_value\": 0.0}], \"inputs\": [{\"type\": \"VECTOR\", \"links\": [], \"name\": \"Vector\", \"enabled\": true, \"default_value\": [0.0, 0.0, 0.0]}], \"name\": \"Image Texture.003\", \"texture_slot\": 3, \"texture_mapping\": {\"mapping\": \"FLAT\"}, \"image\": {\"use_alpha\": true, \"channels\": 0, \"filepath_raw\": \"//../textures/OBJECT 1/BODY NORMAL.png\", \"colorspace\": \"sRGB\"}}}}"
+                              } ]
+                            }
+                          }
+                        } ],
+                        "UserDataContainer": {
+                          "UniqueID": 51,
+                          "Values": [ {
+                            "Name": "source",
+                            "Value": "blender"
+                          },
+                          {
+                            "Name": "UniqueID",
+                            "Value": "3"
+                          } ]
+                        }
+                      }
+                    },
+                    "UserDataContainer": {
+                      "UniqueID": 54,
+                      "Values": [ {
+                        "Name": "attributes",
+                        "Value": "55"
+                      },
+                      {
+                        "Name": "vertex_bits",
+                        "Value": "16"
+                      },
+                      {
+                        "Name": "vertex_mode",
+                        "Value": "3"
+                      },
+                      {
+                        "Name": "uv_0_bits",
+                        "Value": "14"
+                      },
+                      {
+                        "Name": "uv_0_mode",
+                        "Value": "3"
+                      },
+                      {
+                        "Name": "epsilon",
+                        "Value": "0.25"
+                      },
+                      {
+                        "Name": "nphi",
+                        "Value": "720"
+                      },
+                      {
+                        "Name": "triangle_mode",
+                        "Value": "7"
+                      },
+                      {
+                        "Name": "vtx_bbl_x",
+                        "Value": "-9.74239"
+                      },
+                      {
+                        "Name": "vtx_bbl_y",
+                        "Value": "-46.7665"
+                      },
+                      {
+                        "Name": "vtx_bbl_z",
+                        "Value": "-16.0851"
+                      },
+                      {
+                        "Name": "vtx_h_x",
+                        "Value": "0.000594647"
+                      },
+                      {
+                        "Name": "vtx_h_y",
+                        "Value": "0.00291433"
+                      },
+                      {
+                        "Name": "vtx_h_z",
+                        "Value": "0.000905516"
+                      },
+                      {
+                        "Name": "uv_0_bbl_x",
+                        "Value": "-0.00013"
+                      },
+                      {
+                        "Name": "uv_0_bbl_y",
+                        "Value": "0.24998"
+                      },
+                      {
+                        "Name": "uv_0_h_x",
+                        "Value": "0.000121996"
+                      },
+                      {
+                        "Name": "uv_0_h_y",
+                        "Value": "9.15505e-05"
+                      } ]
+                    },
+                    "VertexAttributeList": {
+                      "Normal": {
+                        "UniqueID": 56,
+                        "Array": { 
+                          "Uint32Array": { 
+                            "File": "model_file.bin.gz",
+                            "Size": 19329,
+                            "Offset": 1006948,
+                            "Encoding": "varint"
+                          }
+                        },
+                        "ItemSize": 2,
+                        "Type": "ARRAY_BUFFER"
+                      },
+                      "Tangent": {
+                        "UniqueID": 58,
+                        "Array": { 
+                          "Uint32Array": { 
+                            "File": "model_file.bin.gz",
+                            "Size": 19329,
+                            "Offset": 1078332,
+                            "Encoding": "varint"
+                          }
+                        },
+                        "ItemSize": 2,
+                        "Type": "ARRAY_BUFFER"
+                      },
+                      "TexCoord0": {
+                        "UniqueID": 57,
+                        "Array": { 
+                          "Int32Array": { 
+                            "File": "model_file.bin.gz",
+                            "Size": 19329,
+                            "Offset": 1145588,
+                            "Encoding": "varint"
+                          }
+                        },
+                        "ItemSize": 2,
+                        "Type": "ARRAY_BUFFER"
+                      },
+                      "Vertex": {
+                        "UniqueID": 55,
+                        "Array": { 
+                          "Int32Array": { 
+                            "File": "model_file.bin.gz",
+                            "Size": 19329,
+                            "Offset": 1187732,
+                            "Encoding": "varint"
+                          }
+                        },
+                        "ItemSize": 3,
+                        "Type": "ARRAY_BUFFER"
+                      }
+                    }
+                  }
+                },
+                {
+                  "osg.Geometry": {
+                    "UniqueID": 63,
+                    "Name": "Cube_0",
+                    "PrimitiveSetList": [ {
+                      "DrawElementsUShort": {
+                        "UniqueID": 65,
+                        "Indices": {
+                          "UniqueID": 66,
+                          "Array": { 
+                            "Uint16Array": { 
+                              "File": "model_file_wireframe.bin.gz",
+                              "Size": 73368,
+                              "Offset": 666288,
+                              "Encoding": "varint"
+                            }
+                          },
+                          "ItemSize": 1,
+                          "Type": "ELEMENT_ARRAY_BUFFER"
+                        },
+                        "Mode": "LINES"
+                      }
+                    } ],
+                    "UserDataContainer": {
+                      "UniqueID": 64,
+                      "Values": [ {
+                        "Name": "wireframe",
+                        "Value": "1"
+                      },
+                      {
+                        "Name": "attributes",
+                        "Value": "1"
+                      } ]
+                    },
+                    "VertexAttributeList": {
+                      "Vertex": {
+                        "UniqueID": 55
+                      }
+                    }
+                  }
+                } ]
+              }
+            } ],
+            "Matrix": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -0.45125, 60.9037, 1 ]
+          }
+        } ],
+        "UpdateCallbacks": [ {
+          "osgAnimation.BasicAnimationManager": {
+            "Animations": [ {
+              "osgAnimation.Animation": {
+                "UniqueID": 1,
+                "Name": "EmptyAction",
+                "Channels": [ {
+                  "osgAnimation.QuatSlerpChannelCompressedPacked": {
+                    "Name": "quaternion",
+                    "TargetName": "Empty",
+                    "KeyFrames": {
+                      "Key": {
+                        "UniqueID": 4,
+                        "Array": { 
+                          "Uint16Array": { 
+                            "File": "7ad8e6d2a003402b9b2b472a0ba9ce81.bin.gz",
+                            "Size": 72,
+                            "Offset": 0,
+                            "Encoding": "varint"
+                          }
+                        },
+                        "ItemSize": 3,
+                        "Type": "ARRAY_BUFFER"
+                      },
+                      "Time": {
+                        "UniqueID": 3,
+                        "Array": { 
+                          "Float32Array": { 
+                            "File": "7ad8e6d2a003402b9b2b472a0ba9ce81.bin.gz",
+                            "Size": 72,
+                            "Offset": 472
+                          }
+                        },
+                        "ItemSize": 1,
+                        "Type": "ARRAY_BUFFER"
+                      }
+                    },
+                    "UserDataContainer": {
+                      "UniqueID": 2,
+                      "Values": [ {
+                        "Name": "ox",
+                        "Value": "0"
+                      },
+                      {
+                        "Name": "oy",
+                        "Value": "0"
+                      },
+                      {
+                        "Name": "oz",
+                        "Value": "0"
+                      },
+                      {
+                        "Name": "ow",
+                        "Value": "1"
+                      },
+                      {
+                        "Name": "nphi",
+                        "Value": "8040"
+                      },
+                      {
+                        "Name": "epsilon",
+                        "Value": "0.1"
+                      },
+                      {
+                        "Name": "ot",
+                        "Value": "0.41667"
+                      },
+                      {
+                        "Name": "channel_mode",
+                        "Value": "28"
+                      } ]
+                    }
+                  }
+                } ],
+                "UserDataContainer": {
+                  "UniqueID": 5,
+                  "Values": [ {
+                    "Name": "AnimationUID",
+                    "Value": "7ad8e6d2a003402b9b2b472a0ba9ce81"
+                  } ]
+                }
+              }
+            } ]
+          }
+        } ],
+        "UserDataContainer": {
+          "UniqueID": 6,
+          "Values": [ {
+            "Name": "source",
+            "Value": "blender"
+          } ]
+        }
+      }
+    } ]
+  }
+}

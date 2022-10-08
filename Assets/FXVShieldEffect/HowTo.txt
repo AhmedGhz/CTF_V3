@@ -1,0 +1,71 @@
+FXVShieldEffect v1.33
+
+----------------------------------
+Update to v1.33
+- Added functions to change the color from script
+
+----------------------------------
+Update to v1.32
+- Fixed hit effect from inside of the shield
+
+----------------------------------
+Update to v1.31
+- Fixed bugs in orhtographic shaders
+- Fixed scripting bugs
+
+----------------------------------
+Update to v1.3
+- Added shaders for orthographic camera
+- Added option to enable rendering of both sides of the shield. In order to use it change "Render Sides" option in FXVShield component. 
+	This will take effect only in play mode.
+- Changed Shield prefab's collider form Mesh to Sphere
+- Removed warnings from scripts
+- Scripts are now inside FXV namespace
+
+----------------------------------
+Update to v1.22
+- Fixed problem with shield effect dissapearing in editor mode after material was clicked.
+
+----------------------------------
+Update to v1.21
+
+- mobile shader support was added.
+- bugfixes
+
+----------------------------------
+Update to v1.2
+
+- Separate activation material is now removed from FXVShield script and is handled automatically. 
+Please setup activation effect in shield material now
+
+- Refraction is enabled by selecting separate shader: FXVShieldEffect_refract.shader
+
+----------------------------------
+
+
+How to use this asset:
+
+1. Drag Shield prefab from /FXVShieldEffect/Prefabs/Shield.prefab to the scene
+2. Add postprocess script from /FXVShieldEffect/Scripts/FXVShieldPostprocess.cs to Your main camera
+3. Run project.
+
+You can use methods from /FXVShieldEffect/Scripts/FXVShield.cs to control effects:
+
+ - to control shield activation:
+    public bool GetIsShieldActive()
+    public void SetShieldActive(bool active, bool animated = true)
+	
+ - to control shield effect direction:
+	public void SetShieldEffectDirection(Vector3 dir)
+	
+ - to add hit response effect
+	public void OnHit(Vector3 hitPos, float hitScale)
+	
+	
+You can change look of the effect by assigning different materials to the FXVShield.cs script in gameObject:
+- renderer material is the main effect material. You can use FXVShieldEffect.shader or FXVShieldEffect_refract.shader for refraction effect
+- hitMaterial is material used for hit effects, it should use FXVShieldHit.shader or FXVShieldHit_refract.shader
+
+You can find sample materials that You can play with in /FXVShieldEffect/Materials/
+
+email me at info@fx-valley.com if You have any questions, need some more features, or found a bug
